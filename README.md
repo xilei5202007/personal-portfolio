@@ -34,6 +34,8 @@
 
 ## 品牌、联系与发布
 
+站内页面跳转使用原生 `<a>`。当前 Vinext 生产包的 `next/link` 动态导航导出会丢失，导致点击报 `TypeError: e is not a function`；不要在未验证生产点击流程前改回。筛选仍使用可工作的 router.replace。`scripts/verify-interactions.mjs` 导出 verifyInteractions(context, origin)，接收 Playwright context，覆盖中英文导航、项目入口、搜索、语言切换、灯箱、移动菜单和声音开关；部署凭据由调用方仅在内存中配置。
+
 个人信息在 `content/profile.json`，术语在 `content/glossary.json`，视觉在 `app/portfolio.css`。所有当前字体均采用系统字体回退，无远程字体依赖。交互音为本地 Web Audio 合成，默认关闭并记住选择；无背景音乐。图示是策划示意，不代表引擎实机。
 
 `.openai/hosting.json` 绑定现有 Sites 项目。使用 Sites 保存版本并私密发布；正式公开前完成 `../docs/IMPLEMENTATION_STATUS.md` 中仍待确认的素材。不要将个人关机脚本或本地工具放入网站，相关文件仅位于 `../docs/local-tools/`。
