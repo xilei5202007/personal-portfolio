@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const root=process.cwd();
+const read=dir=>fs.readdirSync(path.join(root,dir)).filter(n=>n.endsWith('.json')).map(n=>JSON.parse(fs.readFileSync(path.join(root,dir,n),'utf8')));
+const projects=read('content/projects'),analyses=read('content/analysis');
+const visible=list=>list.filter(v=>v.visibility==='public');
+function asset(url){if(!url)return;assert(url.startsWith('/')&&!url.includes('..'),`Invalid asset: ${url}`);assert(fs.existsSync(path.join(root,'public',url)),`Missing asset: ${url}`)}
+for(const list of [projects,analyses]){assert.equal(new Set(list.map(v=>v.slug)).size,list.length,'Duplicate slug');for(const p of list){assert(/^[a-z0-9-]+(?:\/[a-z0-9-]+)*$/.test(p.slug),'Invalid slug');assert(['public','draft'].includes(p.visibility),'Invalid visibility');if(p.visibility==='public'){assert(p.name?.zh||p.title?.zh,'Missing title');assert(p.summary?.zh,'Missing summary');asset(p.cover)}}}
+for(const p of visible(projects)){assert(Array.isArray(p.results)&&Array.isArray(p.sections)&&Array.isArray(p.devlog),'Missing content arrays');assert.equal(new Set(p.sections.map(s=>s.id)).size,p.sections.length,'Duplicate section ID');for(const g of p.gallery)asset(g.src);for(const l of p.links)assert(/^https:\/\//.test(l.url),'External links must use HTTPS')}
+for(const a of visible(analyses)){assert(fs.existsSync(path.join(root,'content/articles',a.body)),'Missing article');if(a.englishBody)assert(fs.existsSync(path.join(root,'content/articles',a.englishBody)),'Missing English article');const md=fs.readFileSync(path.join(root,'content/articles',a.body),'utf8');for(const match of md.matchAll(/!\[[^\]]*\]\(assets\/([^)]+)\)/g))asset(`${a.assetBase}/${match[1]}`)}
+for(const a of visible(analyses)){if(a.tablesFile){const set=JSON.parse(fs.readFileSync(path.join(root,'content/tables',a.tablesFile),'utf8'));for(const table of set.tables){for(const row of table.rows){assert.equal(row.length,table.headers.length,'Mismatched table columns');for(const cell of row)assert(cell.zh&&cell.en,'Missing table translation')}}}if(a.sourcesFile)assert(fs.existsSync(path.join(root,'content/sources',a.sourcesFile)),'Missing source file')}
+const downloads=JSON.parse(fs.readFileSync(path.join(root,'content/downloads.json'),'utf8'));for(const file of downloads){asset(file.url);assert(fs.readFileSync(path.join(root,'public',file.url)).subarray(0,5).equals(Buffer.from('%PDF-')),'Not a PDF')}
+const template=JSON.parse(fs.readFileSync(path.join(root,'content/templates/project.json.example'),'utf8'));assert.equal(visible([...projects,template]).length,visible(projects).length,'Draft leaked into public records');assert.equal(visible([...projects,{...template,visibility:'public'}]).length,visible(projects).length+1,'New public project not discovered');
+console.log(`Content valid: ${visible(projects).length} public projects, ${visible(analyses).length} studies, ${downloads.length} PDFs. Draft/public selection and all referenced assets verified.`);

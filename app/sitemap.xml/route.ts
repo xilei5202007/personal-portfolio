@@ -1,0 +1,2 @@
+import {projects,analyses,origin} from '@/lib/content';
+export function GET(){const paths=['','projects','game-analysis','game-analysis/valorant','about','resume','contact',...projects.map(p=>`projects/${p.slug}`),...analyses.map(a=>`game-analysis/${a.slug}`)];return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['zh','en'].flatMap(lang=>paths.map(path=>`<url><loc>${origin}/${lang}${path?'/'+path:''}</loc></url>`)).join('')}</urlset>`,{headers:{'Content-Type':'application/xml; charset=utf-8'}})}

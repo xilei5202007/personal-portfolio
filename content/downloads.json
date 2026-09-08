@@ -1,0 +1,74 @@
+[
+  {
+    "id": "resume-zh",
+    "group": "resume",
+    "title": {
+      "zh": "中文简历",
+      "en": "Chinese resume"
+    },
+    "url": "/pdf/resume-zh.pdf",
+    "size": "0.20 MB",
+    "version": "2026.09",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "valorant-v12",
+    "group": "valorant",
+    "title": {
+      "zh": "无畏契约残局拆解 · 原版20页（图像版）",
+      "en": "VALORANT clutch study · 20 original slides (image PDF)"
+    },
+    "url": "/pdf/valorant-clutch-v1.2-zh.pdf",
+    "size": "9.12 MB",
+    "version": "v1.2",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "wanchao-gdd-zh",
+    "group": "wanchao-zhanyu",
+    "title": {
+      "zh": "万朝战域 · 总体策划书",
+      "en": "Wanchao Zhanyu · Game Design Document"
+    },
+    "url": "/pdf/wanchao-gdd-zh.pdf",
+    "size": "0.81 MB",
+    "version": "发布整理版",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "wanchao-text-prototype-zh",
+    "group": "wanchao-zhanyu",
+    "title": {
+      "zh": "万朝战域 · 文字演示流程手册",
+      "en": "Wanchao Zhanyu · Text Prototype"
+    },
+    "url": "/pdf/wanchao-text-prototype-zh.pdf",
+    "size": "0.98 MB",
+    "version": "发布整理版",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "wanchao-flow-zh",
+    "group": "wanchao-zhanyu",
+    "title": {
+      "zh": "三阵营 RTS · 初版流程说明",
+      "en": "Three-Faction RTS · Initial Flow"
+    },
+    "url": "/pdf/wanchao-flow-zh.pdf",
+    "size": "0.33 MB",
+    "version": "v0.1",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "wanchao-greybox-spec-zh",
+    "group": "wanchao-zhanyu",
+    "title": {
+      "zh": "三阵营地图概念与灰盒制作说明",
+      "en": "Three-Faction Map · Greybox Specification"
+    },
+    "url": "/pdf/wanchao-greybox-spec-zh.pdf",
+    "size": "0.31 MB",
+    "version": "v0.1",
+    "updatedAt": "2026-09-07"
+  }
+]

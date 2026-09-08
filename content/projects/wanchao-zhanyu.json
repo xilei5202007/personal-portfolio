@@ -1,0 +1,168 @@
+{
+  "slug": "wanchao-zhanyu",
+  "visibility": "public",
+  "featured": 2,
+  "status": "development",
+  "genre": "rts-slg",
+  "updatedAt": "2026-09-06",
+  "name": {
+    "zh": "万朝战域",
+    "en": "Wanchao Zhanyu"
+  },
+  "subtitle": {
+    "zh": "从等待战报，到亲手制造战局。",
+    "en": "From waiting for reports to shaping the battle."
+  },
+  "summary": {
+    "zh": "原创多人 RTS / SLG。用三阵营地形、资源与道路，让即时操作和战略选择共同改变战争结果。",
+    "en": "An original multiplayer RTS / SLG where faction terrain, resources and routes connect real-time control with strategic decisions."
+  },
+  "role": {
+    "zh": "个人主导 · 独立负责策划",
+    "en": "Project Initiator · Sole Game Designer"
+  },
+  "period": {
+    "zh": "制作中 · 地图灰盒待验证",
+    "en": "In development · greybox validation next"
+  },
+  "team": {
+    "zh": "合作项目",
+    "en": "Collaborative project"
+  },
+  "cover": null,
+  "tags": [
+    "RTS / SLG",
+    "Complete GDD",
+    "Text Prototype"
+  ],
+  "results": [
+    {
+      "zh": "完整原创策划案",
+      "en": "Complete original design document"
+    },
+    {
+      "zh": "30 分钟文字演示流程",
+      "en": "30-minute text demonstration"
+    },
+    {
+      "zh": "三阵营地图方案与测试标准",
+      "en": "Three-faction map specification and test criteria"
+    }
+  ],
+  "links": [],
+  "sections": [
+    {
+      "id": "question",
+      "title": {
+        "zh": "战争参与感，能由规则重新设计吗？",
+        "en": "Can rules make war feel participatory?"
+      },
+      "paragraphs": [
+        {
+          "zh": "传统 SLG 的战争参与感，能否通过 RTS 即时操作被放大？本项目把地形、道路、资源争夺与历史人物规则化放进同一个框架，关注玩家如何用路线、情报与指令改变结果。",
+          "en": "Can real-time control strengthen the player's role in an SLG war? This project connects terrain, roads, resources and rule-based historical characters, asking how routes, information and commands change outcomes."
+        },
+        {
+          "zh": "当前完成：策划案、文字原型、初版流程、地图灰盒制作说明与测试标准。程序、美术与可玩原型正在开始制作；现有地图示意不是引擎实机截图。",
+          "en": "Completed: design documents, text prototype, initial flow, map greybox instructions and test criteria. Programming, art and a playable prototype are starting. The map schematic is not an in-engine screenshot."
+        }
+      ]
+    },
+    {
+      "id": "map",
+      "title": {
+        "zh": "三个出生区，两条战略路线。",
+        "en": "Three starting regions. Two strategic paths."
+      },
+      "paragraphs": [
+        {
+          "zh": "森林侧重信息、侦察与伏击；山地侧重关口、防守与近铁优势；湿地侧重粮食、补充与区域控制。三方围绕中央城池展开，外围公共资源、铁矿与隐藏路线制造交汇。",
+          "en": "Forests emphasize scouting and ambush; mountains emphasize chokepoints, defense and iron access; wetlands emphasize food, replenishment and area control. Public resources, iron and concealed routes connect these regions around a central city."
+        },
+        {
+          "zh": "玩家可以向外围扩张，也可以提前争夺中央。核心取舍是机会成本：占领中央必须放弃部分外围窗口，外围经营也需要承担中央局势变化。",
+          "en": "Players can expand along the perimeter or contest the center early. Each path has an opportunity cost: committing to the city gives up peripheral openings; developing outside exposes players to changes at the center."
+        }
+      ]
+    },
+    {
+      "id": "systems",
+      "title": {
+        "zh": "中央城不是胜利许可证。",
+        "en": "The central city is not a license to win."
+      },
+      "paragraphs": [
+        {
+          "zh": "奖励太低，玩家没有争夺动机；奖励过高，中央城成为必选并加速滚雪球；NPC 过强，又会让三家合作打 Boss 抢走 PvP 的重心。因此中央城应重新分配道路、资源与时间窗口，推动玩家之间的冲突。",
+          "en": "Too little reward makes the city irrelevant; too much creates a mandatory snowball; excessive NPC strength shifts attention from PvP to a shared boss fight. The city should redistribute routes, resources and timing windows to generate player conflict."
+        },
+        {
+          "zh": "视野决定哪些路线值得相信，粮草与补给约束部队的行动半径，铁矿形成公共争夺点。败者迁移、游击与复兴机制为失败方保留重新参与竞争的目标。这些是设计方案，仍待原型验证。",
+          "en": "Vision shapes route choices, supplies constrain military reach, and iron creates contested points. Migration, guerrilla play and recovery offer defeated players a path back into competition. These remain design proposals awaiting prototype validation."
+        }
+      ]
+    },
+    {
+      "id": "characters",
+      "title": {
+        "zh": "控制权 ≠ 信任。",
+        "en": "Control does not equal trust."
+      },
+      "paragraphs": [
+        {
+          "zh": "汉献帝不是单纯的数值卡：占领洛阳可以取得发布诏令的资格，但信任最高者可能获得密诏与暗助。控制、信任与信息分开，让历史人物进入玩家关系。",
+          "en": "Emperor Xian is designed as more than a stat card: controlling Luoyang grants authority to issue edicts, while the most trusted player may receive secret support. Separating control, trust and information turns history into relationship rules."
+        },
+        {
+          "zh": "张飞的正面冲锋、诸葛亮的侦察预判、白起的围歼控场，分别对应直接、策略和战术表达；每种高光都需要预警、机会成本与反制空间。",
+          "en": "Zhang Fei's charge, Zhuge Liang's scouting and prediction, and Bai Qi's encirclement express different player fantasies. Each needs readable cues, opportunity costs and counterplay."
+        }
+      ]
+    },
+    {
+      "id": "prototype",
+      "title": {
+        "zh": "先用文字走完，再让原型承受验证。",
+        "en": "Walk the loop in text, then test it in play."
+      },
+      "paragraphs": [
+        {
+          "zh": "推演链：原始构想 → 核心矛盾 → 系统结构 → 文字原型 → MVP 边界 → 地图灰盒验证。30 分钟文字演示串联经营侦察、路线选择、即时战斗、地图后果与复兴追击。",
+          "en": "The process moves from initial idea to core conflict, system structure, text prototype, MVP boundaries and greybox testing. A 30-minute text demonstration connects scouting, route choice, combat, map consequences and recovery."
+        },
+        {
+          "zh": "首轮优先验证三阵营出生区、外围与中央两条路线、关键资源与道路的冲突关系。历史 NPC 与复杂角色机制不能遮蔽地图核心假设。",
+          "en": "The first test focuses on starting regions, the perimeter-versus-center choice, and conflict around resources and roads. Historical NPCs and complex character mechanics must not obscure those map hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "validation",
+      "title": {
+        "zh": "灰盒要回答的六个问题。",
+        "en": "Six questions for the greybox."
+      },
+      "paragraphs": [
+        {
+          "zh": "① 三阵营出生是否具备可接受的公平性？② 外围扩张与中央争夺是否形成真实选择？③ 铁矿、道路与关键资源是否制造有效冲突？",
+          "en": "1. Are starting regions acceptably fair? 2. Are perimeter expansion and central contest both meaningful options? 3. Do iron, roads and key resources generate useful conflict?"
+        },
+        {
+          "zh": "④ 隐蔽路线是否有策略价值但不过强？⑤ 中央城是否过早吸走全部玩家？⑥ 失败方是否仍有重新参与竞争的空间？",
+          "en": "4. Are concealed routes valuable without being dominant? 5. Does the city attract everyone too early? 6. Can defeated players return to competition?"
+        },
+        {
+          "zh": "当前风险包括地图不对称带来的出生优势、中央奖励过强导致滚雪球，以及系统范围过大。下一步制作最小地图灰盒，记录路线选择、首次冲突与失败后行动，再调整规则。",
+          "en": "Risks include asymmetric starting advantages, central rewards causing snowballing and excessive scope. Next is a minimal greybox to record route choices, first conflicts and post-defeat actions before changing the rules."
+        }
+      ]
+    }
+  ],
+  "gallery": [],
+  "next": {
+    "zh": "制作最小三阵营地图灰盒，验证路线选择与败者复起。",
+    "en": "Build a minimal three-faction greybox to test route choices and recovery."
+  },
+  "devlog": [],
+  "diagram": "three-faction-map"
+}

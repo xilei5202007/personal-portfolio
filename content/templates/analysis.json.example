@@ -1,0 +1,13 @@
+{
+ "slug":"game-name/research-question","visibility":"draft",
+ "game":{"zh":"游戏名","en":"Game name"},
+ "title":{"zh":"简短研究问题","en":"A short research question"},
+ "fullTitle":{"zh":"文章完整标题","en":"Full article title"},
+ "summary":{"zh":"基于已有证据的结论与边界。","en":"The conclusion and its evidence limits."},
+ "genre":"FPS / TPS","topics":[{"zh":"信息设计","en":"Information design"}],
+ "version":"v0.1","updatedAt":"2026-09-07","readMinutes":5,
+ "contentStatus":{"zh":"研究记录","en":"Research notes"},"languageStatus":{"zh":"中文全文","en":"Chinese article"},"coverAlt":{"zh":"如实填写封面内容与来源","en":"Describe the cover and its source"},
+ "cover":"/analysis/game-name/cover.jpg","body":"game-name.md",
+ "assetBase":"/analysis/game-name","imageCredits":{},
+ "cases":{"own":0,"creator":0,"esports":0}
+}

@@ -1,0 +1,82 @@
+{
+  "slug": "valorant/clutch-system",
+  "visibility": "public",
+  "game": {
+    "zh": "无畏契约",
+    "en": "VALORANT"
+  },
+  "title": {
+    "zh": "人数相同，压力为何不同？",
+    "en": "Same odds. Different pressure."
+  },
+  "fullTitle": {
+    "zh": "为什么同样是 1v2，有时心跳拉满，有时却觉得“输不了”？",
+    "en": "Why does one 1v2 feel intense while another feels already won?"
+  },
+  "summary": {
+    "zh": "1vN 只是表面标签。真正的决策压力，来自未解决威胁、目标强制、空间同步威胁与低容错执行的共同收束。",
+    "en": "Player count alone does not explain pressure. Unresolved threats, objective-forced commitment, simultaneous angles and execution costs combine to constrain the next decision."
+  },
+  "genre": "FPS / TPS",
+  "topics": [
+    {
+      "zh": "多人竞技",
+      "en": "Multiplayer"
+    },
+    {
+      "zh": "信息设计",
+      "en": "Information design"
+    },
+    {
+      "zh": "玩家心理",
+      "en": "Player psychology"
+    },
+    {
+      "zh": "观赛体验",
+      "en": "Spectator experience"
+    },
+    {
+      "zh": "系统优化",
+      "en": "Systems improvement"
+    }
+  ],
+  "version": "v1.2",
+  "updatedAt": "2026-09-02",
+  "readMinutes": 12,
+  "cover": "/analysis/valorant/hero_g006.jpg",
+  "body": "valorant.md",
+  "cases": {
+    "own": 7,
+    "creator": 2,
+    "esports": 3
+  },
+  "englishBody": "valorant-en.md",
+  "assetBase": "/analysis/valorant",
+  "evidence": "valorant",
+  "downloadGroup": "valorant",
+  "imageCredits": {
+    "g001_analysis.png": "作者本人提供的实机案例",
+    "g002_defuse.jpg": "作者本人提供的实机案例",
+    "g003_counterexample.jpg": "作者本人提供的实机案例",
+    "g005_objective.jpg": "作者本人提供的实机案例",
+    "g006_finish.jpg": "作者本人提供的实机案例",
+    "g007_space.jpg": "作者本人提供的实机案例",
+    "c001_fakeout.jpg": "C001 · 创作者双视角案例；原始视频链接待补充。",
+    "c004_analysis.png": "C004 · 创作者教学，抖音，首个裂变峡谷回合 0:11–1:11。",
+    "e002_ace.jpg": "E002 · SiuFatBB 职业赛官方 TOP 5 剪辑，约 1:20–1:37；前序不完整。"
+  },
+  "tablesFile": "valorant.json",
+  "sourcesFile": "valorant.json",
+  "coverAlt": {
+    "zh": "G006 · 本人实机，18生命值下的残局抉择",
+    "en": "G006 · Author gameplay: clutch decisions at 18 HP"
+  },
+  "contentStatus": {
+    "zh": "已完成，持续修订",
+    "en": "Completed, revisable"
+  },
+  "languageStatus": {
+    "zh": "中文全文 / 英文摘要",
+    "en": "Chinese article / English abstract"
+  }
+}

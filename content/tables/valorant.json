@@ -1,0 +1,759 @@
+{
+  "tables": [
+    {
+      "id": "case-evidence",
+      "caption": {
+        "zh": "案例证据总表 · 12 个质性样本",
+        "en": "Case evidence overview · 12 qualitative samples"
+      },
+      "headers": [
+        {
+          "zh": "编号",
+          "en": "ID"
+        },
+        {
+          "zh": "样本",
+          "en": "Sample"
+        },
+        {
+          "zh": "严格局面",
+          "en": "Strict situation"
+        },
+        {
+          "zh": "结果",
+          "en": "Outcome"
+        },
+        {
+          "zh": "压力机制",
+          "en": "Pressure mechanism"
+        },
+        {
+          "zh": "证据边界",
+          "en": "Evidence boundary"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "zh": "G001",
+            "en": "G001"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v2",
+            "en": "1v2"
+          },
+          {
+            "zh": "失败",
+            "en": "Loss"
+          },
+          {
+            "zh": "信息更新＋欺骗＋目标强制＋执行",
+            "en": "Information update + deception + objective pressure + execution"
+          },
+          {
+            "zh": "决策链成立不等于执行成功；不能读取对手真实想法",
+            "en": "A valid decision chain does not guarantee successful execution; the opponent's actual thoughts cannot be read."
+          }
+        ],
+        [
+          {
+            "zh": "G002",
+            "en": "G002"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v3收尾",
+            "en": "Closing phase of a 1v3"
+          },
+          {
+            "zh": "胜利并完成拆除",
+            "en": "Win; defuse completed"
+          },
+          {
+            "zh": "旧信息＋路线时间＋目标承诺",
+            "en": "Old information + travel time + commitment to the objective"
+          },
+          {
+            "zh": "具体往返时间应以录像节点为准，不外推所有安全包",
+            "en": "Use footage timestamps for actual travel time; do not generalize to all safe plant positions."
+          }
+        ],
+        [
+          {
+            "zh": "G003",
+            "en": "G003"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v2",
+            "en": "1v2"
+          },
+          {
+            "zh": "胜利",
+            "en": "Win"
+          },
+          {
+            "zh": "位置分散＋声音确认＋换位",
+            "en": "Separated positions + audio confirmation + repositioning"
+          },
+          {
+            "zh": "‘输不了’是主角口述，不是画面事实；不能外推同类残局",
+            "en": "'Cannot lose' is the player's account, not a visible fact; do not generalize to similar clutches."
+          }
+        ],
+        [
+          {
+            "zh": "G004",
+            "en": "G004"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v3",
+            "en": "1v3"
+          },
+          {
+            "zh": "胜利",
+            "en": "Win"
+          },
+          {
+            "zh": "遮蔽＋枪线分割＋路线排除",
+            "en": "Vision blocking + sightline separation + route elimination"
+          },
+          {
+            "zh": "部分站位与技能作用以录像为准；不能写成囚笼必然造成单挑",
+            "en": "Check positions and ability effects against the footage; do not claim that a cage necessarily creates isolated duels."
+          }
+        ],
+        [
+          {
+            "zh": "G005",
+            "en": "G005"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v3",
+            "en": "1v3"
+          },
+          {
+            "zh": "五杀并拆除",
+            "en": "ACE and defuse"
+          },
+          {
+            "zh": "目标物迁移＋倒计时＋路线压缩",
+            "en": "Objective movement + countdown + route compression"
+          },
+          {
+            "zh": "‘大概率转点’属于当时判断；具体技能名与时间以录像复核",
+            "en": "'Likely rotating' was the player's judgment at the time; verify exact ability names and timings against the footage."
+          }
+        ],
+        [
+          {
+            "zh": "G006",
+            "en": "G006"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v2",
+            "en": "1v2"
+          },
+          {
+            "zh": "胜利；阻止蕾娜拆除",
+            "en": "Win; Reyna's defuse prevented"
+          },
+          {
+            "zh": "信息时效＋当前声音＋行为占用",
+            "en": "Information freshness + current audio + an occupied action"
+          },
+          {
+            "zh": "关键修正：是蕾娜拆包，用户阻止拆除；不是用户完成拆包",
+            "en": "Key correction: Reyna was defusing and the author prevented it; the author did not complete a defuse."
+          }
+        ],
+        [
+          {
+            "zh": "G007",
+            "en": "G007"
+          },
+          {
+            "zh": "本人案例",
+            "en": "Author gameplay"
+          },
+          {
+            "zh": "1v3",
+            "en": "1v3"
+          },
+          {
+            "zh": "胜利",
+            "en": "Win"
+          },
+          {
+            "zh": "遮蔽＋资源取舍＋负信息＋排点",
+            "en": "Vision blocking + resource tradeoffs + negative information + clearing positions"
+          },
+          {
+            "zh": "爆能器位置已修正为A点铁箱后；位置判断不等于知道对手心理",
+            "en": "The spike location is corrected to behind the metal box on A site; judging a position does not reveal the opponent's psychology."
+          }
+        ],
+        [
+          {
+            "zh": "C001",
+            "en": "C001"
+          },
+          {
+            "zh": "外部案例",
+            "en": "External case"
+          },
+          {
+            "zh": "1v2",
+            "en": "1v2"
+          },
+          {
+            "zh": "胜利",
+            "en": "Win"
+          },
+          {
+            "zh": "主动欺骗＋分工错配",
+            "en": "Active deception + disrupted role assignments"
+          },
+          {
+            "zh": "可以确认行为链，不能完整读取防守者心理；以公开视频为准",
+            "en": "The action sequence can be confirmed, but the defenders' thoughts cannot be fully read; refer to the public footage."
+          }
+        ],
+        [
+          {
+            "zh": "C004",
+            "en": "C004"
+          },
+          {
+            "zh": "外部案例",
+            "en": "External case"
+          },
+          {
+            "zh": "1v3",
+            "en": "1v3"
+          },
+          {
+            "zh": "胜利",
+            "en": "Win"
+          },
+          {
+            "zh": "旧信息折损＋遮蔽＋位置重置＋声音确认",
+            "en": "Decay of old information + vision blocking + position reset + audio confirmation"
+          },
+          {
+            "zh": "画面与本人讲解分层；不能写铁臂考虑了所有落点",
+            "en": "Keep visible actions separate from the creator's explanation; do not claim Breach considered every possible landing point."
+          }
+        ],
+        [
+          {
+            "zh": "E001",
+            "en": "E001"
+          },
+          {
+            "zh": "外部案例",
+            "en": "External case"
+          },
+          {
+            "zh": "严格1v3",
+            "en": "Strict 1v3"
+          },
+          {
+            "zh": "胜利",
+            "en": "Win"
+          },
+          {
+            "zh": "信息道具＋响应任务＋目标压力",
+            "en": "Information utility + response tasks + objective pressure"
+          },
+          {
+            "zh": "转播轮廓是观察者信息；技能增加任务不等于单独决定胜利",
+            "en": "Broadcast outlines are observer information; adding a response task does not mean the ability alone determined the win."
+          }
+        ],
+        [
+          {
+            "zh": "E002",
+            "en": "E002"
+          },
+          {
+            "zh": "外部案例",
+            "en": "External case"
+          },
+          {
+            "zh": "严格1v3（ACE前两杀在此前）",
+            "en": "Strict 1v3; the first two ACE kills occurred earlier"
+          },
+          {
+            "zh": "胜利并ACE",
+            "en": "Win and ACE"
+          },
+          {
+            "zh": "团队信息接力＋入口分割＋高度切换",
+            "en": "Team information relay + entrance separation + height adjustment"
+          },
+          {
+            "zh": "TOP5剪辑跳切；TARGET HIT施放者与完整技能前序未知",
+            "en": "The TOP 5 edit contains cuts; the source of 'TARGET HIT' and the full preceding ability sequence are unknown."
+          }
+        ],
+        [
+          {
+            "zh": "E003",
+            "en": "E003"
+          },
+          {
+            "zh": "外部案例",
+            "en": "External case"
+          },
+          {
+            "zh": "严格1v4（整回合ACE）",
+            "en": "Strict 1v4; ACE across the full round"
+          },
+          {
+            "zh": "胜利并ACE",
+            "en": "Win and ACE"
+          },
+          {
+            "zh": "经济反转＋角度隔离＋机械执行",
+            "en": "Economy reversal + angle isolation + mechanical execution"
+          },
+          {
+            "zh": "现有证据只说明未建立信息技能主导，不等于整回合绝对没用技能",
+            "en": "Current evidence does not establish information-ability dominance; it does not prove that no abilities were used during the entire round."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "evidence-levels",
+      "caption": {
+        "zh": "证据等级与可支持结论",
+        "en": "Evidence levels and supported claims"
+      },
+      "headers": [
+        {
+          "zh": "证据类型",
+          "en": "Evidence type"
+        },
+        {
+          "zh": "可支持内容",
+          "en": "What it supports"
+        },
+        {
+          "zh": "表达边界",
+          "en": "Reporting boundary"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "zh": "事实",
+            "en": "Fact"
+          },
+          {
+            "zh": "录像、UI、官方资料可直接确认",
+            "en": "Directly confirmed by footage, UI or official documentation"
+          },
+          {
+            "zh": "可写‘画面显示/官方说明’",
+            "en": "Use 'the footage shows' or 'official documentation states'."
+          }
+        ],
+        [
+          {
+            "zh": "本人复盘",
+            "en": "First-person review"
+          },
+          {
+            "zh": "案例本人对当时判断与感受的回忆",
+            "en": "The case player's recollection of judgments and feelings at the time"
+          },
+          {
+            "zh": "写明‘本人复盘’，不外推全体玩家",
+            "en": "Label it as first-person review; do not generalize to all players."
+          }
+        ],
+        [
+          {
+            "zh": "创作者讲解",
+            "en": "Creator explanation"
+          },
+          {
+            "zh": "操作者或视频作者对行为的解释",
+            "en": "The player's or video creator's explanation of an action"
+          },
+          {
+            "zh": "与画面事实分栏",
+            "en": "Keep it separate from visible facts."
+          }
+        ],
+        [
+          {
+            "zh": "研究推论",
+            "en": "Research inference"
+          },
+          {
+            "zh": "根据多项证据建立的机制解释",
+            "en": "A mechanism explanation built from multiple pieces of evidence"
+          },
+          {
+            "zh": "使用‘表明/支持/推测’，保留验证条件",
+            "en": "Use 'indicates', 'supports' or 'suggests'; retain the conditions for validation."
+          }
+        ],
+        [
+          {
+            "zh": "未知",
+            "en": "Unknown"
+          },
+          {
+            "zh": "现有证据无法确认",
+            "en": "Cannot be confirmed from the available evidence"
+          },
+          {
+            "zh": "明确不作事实陈述",
+            "en": "Explicitly avoid presenting it as fact."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "failure-counterexamples",
+      "caption": {
+        "zh": "失败案例与反例对照",
+        "en": "Failure cases and counterexamples"
+      },
+      "headers": [
+        {
+          "zh": "案例",
+          "en": "Case"
+        },
+        {
+          "zh": "对照作用",
+          "en": "Contrast role"
+        },
+        {
+          "zh": "可支持的判断",
+          "en": "Supported conclusion"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "zh": "G001",
+            "en": "G001"
+          },
+          {
+            "zh": "策略成功、执行失败",
+            "en": "Successful strategy; failed execution"
+          },
+          {
+            "zh": "决策层与执行层需要分开评价。",
+            "en": "Evaluate decision quality and execution separately."
+          }
+        ],
+        [
+          {
+            "zh": "G003",
+            "en": "G003"
+          },
+          {
+            "zh": "低压力 1v2 反例",
+            "en": "Low-pressure 1v2 counterexample"
+          },
+          {
+            "zh": "人数劣势不自动等于高压力；“输不了”是本人复盘。",
+            "en": "Being outnumbered does not automatically mean high pressure; 'cannot lose' is the player's first-person review."
+          }
+        ],
+        [
+          {
+            "zh": "E003",
+            "en": "E003"
+          },
+          {
+            "zh": "非信息技能主导反例",
+            "en": "Counterexample to information-ability dominance"
+          },
+          {
+            "zh": "经济反转、柱体隔离与连续爆头也能制造高光。",
+            "en": "Economy reversal, pillar-based isolation and consecutive headshots can also produce a highlight."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "mechanism-matrix",
+      "caption": {
+        "zh": "机制如何连接玩家体验",
+        "en": "How mechanisms connect to player experience"
+      },
+      "headers": [
+        {
+          "zh": "机制",
+          "en": "Mechanism"
+        },
+        {
+          "zh": "底层逻辑",
+          "en": "Underlying logic"
+        },
+        {
+          "zh": "体验",
+          "en": "Experience"
+        },
+        {
+          "zh": "案例",
+          "en": "Cases"
+        },
+        {
+          "zh": "风险 / 反例",
+          "en": "Risk / counterexample"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "zh": "信息快速折损",
+            "en": "Rapid information decay"
+          },
+          {
+            "zh": "位置随时间与路线选择失效；新声音优先级更高",
+            "en": "Positions become outdated with time and route choices; newer audio has higher priority."
+          },
+          {
+            "zh": "紧张来自‘我知道过，但现在还成立吗’",
+            "en": "Tension comes from 'I knew this before, but is it still true?'"
+          },
+          {
+            "zh": "G006 / C004",
+            "en": "G006 / C004"
+          },
+          {
+            "zh": "把观察者轮廓误当玩家信息；过度相信旧信息",
+            "en": "Mistaking observer outlines for player information; trusting old information too much."
+          }
+        ],
+        [
+          {
+            "zh": "负信息排除",
+            "en": "Elimination through negative information"
+          },
+          {
+            "zh": "‘没有看到’在限定视野/时间内可缩小可能集合",
+            "en": "Within a bounded field of view and time window, not seeing something can narrow the possibilities."
+          },
+          {
+            "zh": "掌控感来自未知方向持续减少",
+            "en": "A sense of control as unknown directions steadily decrease."
+          },
+          {
+            "zh": "G007 / G002",
+            "en": "G007 / G002"
+          },
+          {
+            "zh": "负信息只有在观察范围充分时才有效",
+            "en": "Negative information is valid only when observation coverage is sufficient."
+          }
+        ],
+        [
+          {
+            "zh": "目标强制",
+            "en": "Objective-forced action"
+          },
+          {
+            "zh": "目标交互占用行动并限制可等待时间",
+            "en": "Objective interactions occupy actions and limit how long a player can wait."
+          },
+          {
+            "zh": "倒计时让正确路线也具有承诺成本",
+            "en": "The countdown gives even the correct route a commitment cost."
+          },
+          {
+            "zh": "G002 / G005 / G006",
+            "en": "G002 / G005 / G006"
+          },
+          {
+            "zh": "人数劣势但无目标压力时可能不紧张（G003）",
+            "en": "Being outnumbered may feel less tense without objective pressure (G003)."
+          }
+        ],
+        [
+          {
+            "zh": "空间分割",
+            "en": "Spatial separation"
+          },
+          {
+            "zh": "限制同一时刻开放的枪线与补枪路径",
+            "en": "Limits simultaneously open sightlines and paths for trade kills."
+          },
+          {
+            "zh": "策略爽感来自主动管理交火顺序",
+            "en": "Strategic satisfaction from actively controlling engagement order."
+          },
+          {
+            "zh": "G004 / G007 / E002 / E003",
+            "en": "G004 / G007 / E002 / E003"
+          },
+          {
+            "zh": "敌人同步补枪时分割失效；遮蔽也可能遮断己方信息",
+            "en": "Separation fails when opponents trade in sync; blocked vision can also remove friendly information."
+          }
+        ],
+        [
+          {
+            "zh": "主动欺骗",
+            "en": "Active deception"
+          },
+          {
+            "zh": "制造可信但错误的行动线索",
+            "en": "Creates credible but false cues about an action."
+          },
+          {
+            "zh": "读懂对手模型并成功误导带来策略爽感",
+            "en": "Strategic satisfaction from understanding and successfully misleading the opponent's model."
+          },
+          {
+            "zh": "G001 / C001",
+            "en": "G001 / C001"
+          },
+          {
+            "zh": "对手不响应或假信息不可信时无效",
+            "en": "Ineffective if opponents do not respond or the false information is not credible."
+          }
+        ],
+        [
+          {
+            "zh": "执行兑现",
+            "en": "Execution of the decision"
+          },
+          {
+            "zh": "战术判断必须通过枪法和操作完成",
+            "en": "Tactical judgment must be completed through aim and mechanical control."
+          },
+          {
+            "zh": "成功是高光；失败会放大前序策略的遗憾",
+            "en": "Success becomes a highlight; failure intensifies regret over the preceding strategy."
+          },
+          {
+            "zh": "G001 / E003",
+            "en": "G001 / E003"
+          },
+          {
+            "zh": "不能用结果倒推决策质量",
+            "en": "Do not infer decision quality from the outcome."
+          }
+        ],
+        [
+          {
+            "zh": "观赛可读性",
+            "en": "Spectator readability"
+          },
+          {
+            "zh": "把内部判断外化为可见状态变化",
+            "en": "Makes internal judgments visible through observable state changes."
+          },
+          {
+            "zh": "紧张、反转、明星高光和社交传播",
+            "en": "Tension, reversals, star highlights and social sharing."
+          },
+          {
+            "zh": "C004 / E001 / E002 / E003",
+            "en": "C004 / E001 / E002 / E003"
+          },
+          {
+            "zh": "普通观众未必理解线索因果；当前缺少观看测试",
+            "en": "Ordinary viewers may miss causal links between cues; no viewing test has been conducted."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "proposals-validation",
+      "caption": {
+        "zh": "优化提案、风险与验证指标 · 尚待原型测试",
+        "en": "Improvement proposals, risks and measures · awaiting prototype testing"
+      },
+      "headers": [
+        {
+          "zh": "优化提案",
+          "en": "Proposal"
+        },
+        {
+          "zh": "风险",
+          "en": "Risk"
+        },
+        {
+          "zh": "验证指标",
+          "en": "Validation measure"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "zh": "赛后关键线索时间轴：保留 3—5 个决定性节点",
+            "en": "Post-round cue timeline: retain 3–5 decisive moments"
+          },
+          {
+            "zh": "信息过载、解释层打断观看",
+            "en": "Information overload; explanations interrupt viewing"
+          },
+          {
+            "zh": "关键线索回忆率、因果判断正确率",
+            "en": "Key-cue recall rate; causal judgment accuracy"
+          }
+        ],
+        [
+          {
+            "zh": "玩家信息 / 观察者信息切换",
+            "en": "Player / observer information toggle"
+          },
+          {
+            "zh": "两种视角被混淆",
+            "en": "Confusing the two perspectives"
+          },
+          {
+            "zh": "残局理解耗时",
+            "en": "Time needed to understand the clutch"
+          }
+        ],
+        [
+          {
+            "zh": "仅在回放中使用、允许关闭",
+            "en": "Replay-only use, with an option to turn it off"
+          },
+          {
+            "zh": "视觉负担大于理解收益",
+            "en": "Visual load outweighs the gain in understanding"
+          },
+          {
+            "zh": "回放完成率、A/B 观看测试",
+            "en": "Replay completion rate; A/B viewing test"
+          }
+        ]
+      ]
+    }
+  ]
+}

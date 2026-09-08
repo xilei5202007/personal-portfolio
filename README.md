@@ -1,0 +1,39 @@
+# t1ar / 游戏策划作品集
+
+以 `../docs/PORTFOLIO_MASTER_SPEC.md` 为内容主规范。原件保留在原位置；网站只使用副本。现有项目：乱世执棋、万朝战域；研究：无畏契约残局。
+
+## 本地运行
+
+使用已安装的 Node.js 22.13+：`npm install`，`npm run dev`。生产检查：`npm exec tsc -- --noEmit`、`node scripts/validate-content.mjs`、`npm run build`。
+
+## 新增游戏
+
+1. 复制 `content/templates/project.json.example` 到 `content/projects/你的项目.json`。
+2. 设置唯一英文 slug、中文名称、摘要、本人职责、团队、当前状态与已有成果。不要把计划写成成果。
+3. `visibility: "draft"` 保持草稿；准备好展示时改为 `"public"`。草稿不会进入页面、筛选和站点地图；客户端只收到公开记录。
+4. 封面放在 `public/projects/项目名/` 并填写 `/projects/项目名/cover.jpg`；没有图片时保留 `cover: null`，使用文字封面。`diagram` 仅在明确需要三阵营概念图时设为 `three-faction-map`。
+5. 新项目自动拥有 `/zh/projects/slug` 和 `/en/projects/slug`，无需修改页面或导航。
+
+`status` 支持 idea / design / prototype / development / playable / released / paused。`genre` 为类型标识，列表选项从内容生成。`results` 可以为空，不据状态推断成果。英文暂缺时留空，英文项目页会给出提示与中文入口。
+
+## 更新制作记录、状态与精选
+
+在项目 `devlog` 数组追加 `{ "date":"2026-09-07", "title":{"zh":"本次标题","en":"Title"}, "description":{"zh":"实际完成内容","en":"What changed"}, "evidence":"/projects/my-game/evidence.png", "next":{"zh":"下一步","en":"Next"} }`。证据可省略，不能使用虚构链接。更新 `status` 与 `updatedAt`；保持成果与状态独立。
+
+`featured: null` 表示仅进入全部作品；正整数决定首页顺序。目前 1 为乱世执棋、2 为万朝战域，新增作品不自动打乱该顺序。
+
+## 新增拆解
+
+复制 `content/templates/analysis.json.example` 到 `content/analysis/`，正文放在 `content/articles/`，素材放在 `public/analysis/`。设置 `body`、`assetBase`、`imageCredits`、类型、主题、来源样本规模与版本。正文支持标题、段落、加粗、列表、引文、HTTPS 链接和 `![图注](assets/image.jpg)`。正文支持 Markdown 表格并渲染为原生 HTML 表格。需要同结构双语证据表时，在 content/tables/ 新建 JSON（参考 valorant.json）并设置 tablesFile；完整来源在 content/sources/ 新建 JSON 并设置 sourcesFile。无需修改页面组件。
+
+可选 `englishBody` 指向英文摘要 Markdown；没有英文正文时展示英文摘要与中文全文入口。`tablesFile` / `sourcesFile` 决定各自的证据与来源，避免新文章混用旧研究内容。首页精选拆解由 content/site.json 的 featuredAnalysis 单独指定。游戏类型、研究主题和游戏筛选来自公开元数据，查询保存在 URL。
+
+## 更新 PDF
+
+放入 `public/pdf/`，然后在 `content/downloads.json` 添加 id、group、双语 title、url、size、version、updatedAt。简历 group 为 `resume`，万朝文档为 `wanchao-zhanyu`，无畏契约为 `valorant`。新文章可使用自己的 `downloadGroup`，默认使用 slug。只登记真实可打开的 PDF。桌面支持按需展开预览，手机提供打开/下载。
+
+## 品牌、联系与发布
+
+个人信息在 `content/profile.json`，术语在 `content/glossary.json`，视觉在 `app/portfolio.css`。所有当前字体均采用系统字体回退，无远程字体依赖。交互音为本地 Web Audio 合成，默认关闭并记住选择；无背景音乐。图示是策划示意，不代表引擎实机。
+
+`.openai/hosting.json` 绑定现有 Sites 项目。使用 Sites 保存版本并私密发布；正式公开前完成 `../docs/IMPLEMENTATION_STATUS.md` 中仍待确认的素材。不要将个人关机脚本或本地工具放入网站，相关文件仅位于 `../docs/local-tools/`。

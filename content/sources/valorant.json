@@ -1,0 +1,144 @@
+{
+  "note": {
+    "zh": "G001—G007 为作者本人提供的实机案例。C001 为创作者双视角素材，E001 为职业赛事案例，两者原始视频链接仍待补充；不以角色资料页代替案例来源。C004 与 E002 的剪辑前序缺失继续保留为未知。",
+    "en": "G001–G007 are gameplay cases supplied by the author. Original video links for creator case C001 and esports case E001 are pending. Character documentation does not substitute for footage; missing lead-in sequences remain unknown."
+  },
+  "disclaimer": {
+    "zh": "本文为个人游戏设计研究与作品集内容，并非 Riot Games 或《无畏契约》官方材料。第三方案例与赛事画面仅用于机制分析，相关权利归原作者及权利方所有。",
+    "en": "This is an independent game design study and portfolio piece, not affiliated with or endorsed by Riot Games. Third-party footage and images are used for analysis with credit to their owners."
+  },
+  "sources": [
+    {
+      "id": "S005",
+      "title": {
+        "zh": "VALORANT 13.02版本更新公告",
+        "en": "playvalorant.com / S005"
+      },
+      "url": "https://playvalorant.com/zh-cn/news/game-updates/valorant-patch-notes-13-02/",
+      "scope": {
+        "zh": "以官网页面为准",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S006",
+      "title": {
+        "zh": "零角色页",
+        "en": "playvalorant.com / S006"
+      },
+      "url": "https://playvalorant.com/en-us/agents/cypher/",
+      "scope": {
+        "zh": "具体数值以客户端为准",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S007",
+      "title": {
+        "zh": "猎枭角色页",
+        "en": "playvalorant.com / S007"
+      },
+      "url": "https://playvalorant.com/en-us/agents/sova/",
+      "scope": {
+        "zh": "不支持具体案例胜因",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S008",
+      "title": {
+        "zh": "捷风角色页",
+        "en": "playvalorant.com / S008"
+      },
+      "url": "https://playvalorant.com/en-us/agents/jett/",
+      "scope": {
+        "zh": "案例状态仍以录像为准",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S009",
+      "title": {
+        "zh": "夜露角色页",
+        "en": "playvalorant.com / S009"
+      },
+      "url": "https://playvalorant.com/en-us/agents/yoru/",
+      "scope": {
+        "zh": "不直接证明对手受骗",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S010",
+      "title": {
+        "zh": "C004幽影残局教学",
+        "en": "www.douyin.com / S010"
+      },
+      "url": "https://www.douyin.com/video/7629310185701786468",
+      "scope": {
+        "zh": "其余章节不并入本案例",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S011",
+      "title": {
+        "zh": "E002 SiuFatBB对TE精选高光",
+        "en": "jingxuan.douyin.com / S011"
+      },
+      "url": "https://jingxuan.douyin.com/m/video/7598450997001866538",
+      "scope": {
+        "zh": "TOP5跳切，技能前序不全",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S012",
+      "title": {
+        "zh": "TE vs WOL比赛页",
+        "en": "www.vlr.gg / S012"
+      },
+      "url": "https://www.vlr.gg/598923/trace-esports-vs-wolves-esports-vct-2026-china-kickoff-ur1/?game=245205&tab=overview",
+      "scope": {
+        "zh": "不含完整队内信息",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S013",
+      "title": {
+        "zh": "T1 vs TL Map 1",
+        "en": "www.youtube.com / S013"
+      },
+      "url": "https://www.youtube.com/watch?v=qnO-LlwW2tM",
+      "scope": {
+        "zh": "字幕/转播不等于队内语音",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S014",
+      "title": {
+        "zh": "T1 vs TL performance",
+        "en": "www.vlr.gg / S014"
+      },
+      "url": "https://www.vlr.gg/625789/t1-vs-team-liquid-valorant-masters-santiago-2026-r1/?parent=6221018&tab=performance",
+      "scope": {
+        "zh": "不证明技能前序",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    },
+    {
+      "id": "S015",
+      "title": {
+        "zh": "Team Liquid sweeps T1",
+        "en": "www.vlr.gg / S015"
+      },
+      "url": "https://www.vlr.gg/630457/team-liquid-sweeps-t1-to-end-first-round-of-swiss/",
+      "scope": {
+        "zh": "报道时区可能跨日",
+        "en": "Supports only the documented case or mechanic; edited or missing sequences remain unknown."
+      }
+    }
+  ]
+}
