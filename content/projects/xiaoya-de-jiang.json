@@ -1,0 +1,166 @@
+{
+  "slug": "xiaoya-de-jiang",
+  "visibility": "public",
+  "featured": 0,
+  "status": "playable",
+  "genre": "narrative-puzzle",
+  "updatedAt": "2026-09-08",
+  "name": {
+    "zh": "小伢的江",
+    "en": "Grow in Wuhan"
+  },
+  "subtitle": {
+    "zh": "城市在生长，你也在生长。",
+    "en": "A city grows. So do you."
+  },
+  "summary": {
+    "zh": "以武汉城市记忆与个人成长为主题的叙事交互游戏。通过拖拽拼图、早餐点击等日常操作，走过童年、求学、离乡与返乡。",
+    "en": "A narrative game about growing up in Wuhan. Everyday interactions, from dragging puzzle pieces to clicking through breakfast, connect childhood, school, departure and homecoming."
+  },
+  "role": {
+    "zh": "队长 · 游戏策划 · 分镜策划",
+    "en": "Team Lead · Game Design · Storyboarding"
+  },
+  "period": {
+    "zh": "GGJ 2026 · 翌光计划武汉站",
+    "en": "GGJ 2026 · Yiguang, Wuhan"
+  },
+  "team": {
+    "zh": "现场组队 · 团队共同制作",
+    "en": "Team formed on site · Collaborative production"
+  },
+  "cover": "/images/xiaoya-de-jiang/cover.png",
+  "coverAlt": {
+    "zh": "《小伢的江》课堂场景，来自游戏 gd.games 发布页",
+    "en": "Classroom scene from Grow in Wuhan, sourced from the game's gd.games page"
+  },
+  "tags": [
+    "GGJ 2026",
+    "Narrative",
+    "Point & Click"
+  ],
+  "results": [
+    {
+      "zh": "已发布在线试玩与实机演示",
+      "en": "Online playable build and gameplay video"
+    },
+    {
+      "zh": "主导全部分镜策划",
+      "en": "Led storyboarding across the game"
+    },
+    {
+      "zh": "现场组队、协作与项目展示",
+      "en": "On-site team formation and presentation"
+    }
+  ],
+  "links": [
+    {
+      "label": {
+        "zh": "在线试玩",
+        "en": "Play online"
+      },
+      "url": "https://gd.games/l1ttleblack/grow-in-wuhan"
+    },
+    {
+      "label": {
+        "zh": "观看实机演示",
+        "en": "Watch gameplay"
+      },
+      "url": "https://www.bilibili.com/video/BV1nmbp66EJc/"
+    },
+    {
+      "label": {
+        "zh": "GGJ 作品页",
+        "en": "GGJ project page"
+      },
+      "url": "https://globalgamejam.org/games/2026/xiaoyadejiang-9"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": {
+        "zh": "沿着一条江，走过一个人的成长。",
+        "en": "A childhood, a city, a river."
+      },
+      "paragraphs": [
+        {
+          "zh": "《小伢的江》是我们在 GGJ 2026 翌光计划武汉站共同完成的叙事交互游戏。我在活动现场组队并担任队长，组织沟通与协作，将武汉的城市记忆和一个普通小孩的成长连接起来。",
+          "en": "We created Grow in Wuhan at GGJ 2026's Yiguang event in Wuhan. I formed the team on site and served as team lead, coordinating our work on a narrative connecting the city's memories with an ordinary child's life."
+        },
+        {
+          "zh": "故事从二十年前的老窗出发，经过老街早餐摊、课桌与试卷、离乡的列车，再随返乡的高铁回望已经改变的故乡。童年、求学、离乡与返乡构成叙事主线。",
+          "en": "The story begins at an old window twenty years ago, then passes breakfast stalls, school desks, examinations and a train leaving home. A high-speed train brings the protagonist back to a changed hometown. Childhood, school, departure and return form the narrative arc."
+        }
+      ]
+    },
+    {
+      "id": "storyboards",
+      "title": {
+        "zh": "用分镜组织故事的推进。",
+        "en": "Shaping the story through storyboards."
+      },
+      "paragraphs": [
+        {
+          "zh": "我主导了游戏全部分镜策划，并参与故事设计，将成长经历落实为具体场景与画面顺序。分镜、故事与交互围绕同一条人生时间线展开，让玩家在日常片段中认识主角和这座城市。",
+          "en": "I led all of the game's storyboarding and contributed to story design, organizing the protagonist's life into scenes and their visual sequence. Storyboards, narrative and interactions follow the same timeline through everyday moments."
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "title": {
+        "zh": "交互即关卡，让日常动作推进故事。",
+        "en": "Everyday interactions become the levels."
+      },
+      "paragraphs": [
+        {
+          "zh": "我参与关卡和交互设计及关卡制作，以“交互即关卡”组织体验。拖拽拼图、早餐点击等操作承载故事推进；玩家通过具体动作参与场景，而不只是阅读介绍。",
+          "en": "I contributed to level and interaction design and level production. Dragging puzzle pieces and clicking through breakfast turn familiar actions into ways of progressing through the story."
+        },
+        {
+          "zh": "游戏选择轻操作、无失败惩罚的基调。我参与整体设计与基调敲定，让玩家可以慢慢看、轻轻动，把注意力留给场景、记忆与成长。",
+          "en": "I also helped establish the game's overall direction and tone: light interaction without failure penalties, leaving players time to observe the scenes and follow the protagonist's growth."
+        }
+      ]
+    },
+    {
+      "id": "teamwork",
+      "title": {
+        "zh": "从现场组队，到共同完成作品。",
+        "en": "From an on-site team to a shared game."
+      },
+      "paragraphs": [
+        {
+          "zh": "作为队长，我组织团队沟通和协作；在具体制作中，我主导全部分镜策划，参与故事、关卡、交互与整体游戏设计。程序、美术等团队成果不归为我的个人独立实现。",
+          "en": "As team lead, I organized communication and collaboration. My production work covered all storyboarding and contributions to the story, levels, interactions and overall design. The team's programming and artwork are not presented as my individual work."
+        },
+        {
+          "zh": "项目已提供在线试玩和实机演示。下方保留现场展示照片与 GGJ 页面记录，分别呈现线下展示和作品发布情况。",
+          "en": "The game has an online playable build and a gameplay video. The presentation photo and GGJ page capture below document the live presentation and the published project."
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/images/xiaoya-de-jiang/presentation.jpg",
+      "caption": {
+        "zh": "《小伢的江》现场展示 · 本人提供的活动照片",
+        "en": "Grow in Wuhan presentation · Event photo supplied by the author"
+      }
+    },
+    {
+      "src": "/images/xiaoya-de-jiang/ggj-page.png",
+      "caption": {
+        "zh": "GGJ 作品页记录 · 本人提供的截图，包含拼图场景、分类与试玩入口",
+        "en": "GGJ project page · Author-supplied capture showing the puzzle scene, categories and play link"
+      }
+    }
+  ],
+  "next": {
+    "zh": "后续可补充完整分镜与具体关卡的设计过程。",
+    "en": "Further documentation can show the complete storyboards and individual level design decisions."
+  },
+  "devlog": []
+}
