@@ -6,10 +6,18 @@ $stage=[IO.Path]::GetFullPath((Join-Path $project ('work\package-'+[guid]::NewGu
 $expectedPrefix=(Join-Path $project 'work')+[IO.Path]::DirectorySeparatorChar
 if(!$stage.StartsWith($expectedPrefix,[StringComparison]::OrdinalIgnoreCase)){throw 'Packaging stage must stay inside project/work'}
 if(Test-Path -LiteralPath $stage){throw 'Refusing to reuse an existing packaging stage'}
-$helper='C:\Users\lenovo\.codex\plugins\cache\openai-bundled\sites\0.1.57\skills\sites-hosting\scripts\prepare-site-build.cjs'
-# Native Windows equivalent of package-site.sh using its shared validation helper.
-$kind=& node $helper $project (Join-Path $stage 'dist')
-if($LASTEXITCODE -ne 0){throw 'Sites build preparation failed'}
+# Native Windows packaging for the existing Worker output. This also works when
+# the optional Sites plugin's shell helper is not installed on this computer.
+$buildDirectory=Join-Path $project 'dist'
+if(!(Test-Path -LiteralPath (Join-Path $buildDirectory 'server\index.js') -PathType Leaf)){throw 'Missing Worker entrypoint'}
+if(!(Test-Path -LiteralPath (Join-Path $project '.openai\hosting.json') -PathType Leaf)){throw 'Missing Sites metadata'}
+$config=Get-Content -Raw -LiteralPath (Join-Path $project '.openai\hosting.json') | ConvertFrom-Json
+if($config.static){throw 'This adapter only packages the established Worker build'}
+$special=Get-ChildItem -LiteralPath $buildDirectory -Recurse -Force | Where-Object { $_.Attributes -band [IO.FileAttributes]::ReparsePoint }
+if($special){throw 'Build output contains a symlink or reparse point'}
+New-Item -ItemType Directory -Path $stage | Out-Null
+Copy-Item -LiteralPath $buildDirectory -Destination (Join-Path $stage 'dist') -Recurse
+$kind='worker'
 $metadata=Join-Path $stage 'dist\.openai'
 New-Item -ItemType Directory -Force -Path $metadata | Out-Null
 if($kind -eq 'worker'){Copy-Item -LiteralPath (Join-Path $project '.openai\hosting.json') -Destination (Join-Path $metadata 'hosting.json')}
