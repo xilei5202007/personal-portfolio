@@ -38,6 +38,8 @@
 
 ## 品牌、联系与发布
 
+交互与视觉：`app/art-direction.css` 延续青蓝标识，采用深色作品展台与浅色正文。首页 `HeroShowcase` 手动切换精选作品，支持方向键和 Home/End，不自动轮播。`ReadingNav` 根据阅读位置高亮章节，手机端折叠目录；灯箱支持适应窗口、原始尺寸和独立滚动。正文无需滚动动画触发即可阅读，动效遵循减少动态效果设置。项目详情沿用所属一级导航高亮。
+
 站内页面跳转使用原生 `<a>`。当前 Vinext 生产包的 `next/link` 动态导航导出会丢失，导致点击报 `TypeError: e is not a function`；不要在未验证生产点击流程前改回。筛选仍使用可工作的 router.replace。`scripts/verify-interactions.mjs` 导出 verifyInteractions(context, origin)，接收 Playwright context，覆盖中英文导航、项目入口、搜索、语言切换、灯箱、移动菜单和声音开关；部署凭据由调用方仅在内存中配置。
 
 个人信息在 `content/profile.json`，术语在 `content/glossary.json`，视觉在 `app/portfolio.css`。所有当前字体均采用系统字体回退，无远程字体依赖。交互音为本地 Web Audio 合成，默认关闭并记住选择；无背景音乐。图示是策划示意，不代表引擎实机。
