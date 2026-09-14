@@ -4,7 +4,7 @@
   "featured": 0,
   "status": "playable",
   "genre": "narrative-puzzle",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-14",
   "name": {
     "zh": "小伢的江",
     "en": "Grow in Wuhan"
@@ -14,8 +14,8 @@
     "en": "A city grows. So do you."
   },
   "summary": {
-    "zh": "以武汉城市记忆与个人成长为主题的叙事交互游戏。通过拖拽拼图、早餐点击等日常操作，走过童年、求学、离乡与返乡。",
-    "en": "A narrative game about growing up in Wuhan. Everyday interactions, from dragging puzzle pieces to clicking through breakfast, connect childhood, school, departure and homecoming."
+    "zh": "武汉成长叙事游戏：用拼图与早餐点击，串起童年、求学、离乡与返乡。",
+    "en": "A coming-of-age game set in Wuhan, connecting childhood, school, departure and homecoming through puzzles and everyday interactions."
   },
   "role": {
     "zh": "队长 · 游戏策划 · 分镜策划",
@@ -29,10 +29,10 @@
     "zh": "现场组队 · 团队共同制作",
     "en": "Team formed on site · Collaborative production"
   },
-  "cover": "/images/xiaoya-de-jiang/cover.png",
+  "cover": "/images/xiaoya-de-jiang/poster.jpg",
   "coverAlt": {
-    "zh": "《小伢的江》课堂场景，来自游戏 gd.games 发布页",
-    "en": "Classroom scene from Grow in Wuhan, sourced from the game's gd.games page"
+    "zh": "《小伢的江》项目海报：小伢、长江与黄鹤楼",
+    "en": "Grow in Wuhan project poster featuring the child, the Yangtze River and Yellow Crane Tower"
   },
   "tags": [
     "GGJ 2026",
@@ -97,13 +97,26 @@
     {
       "id": "storyboards",
       "title": {
-        "zh": "用分镜组织故事的推进。",
-        "en": "Shaping the story through storyboards."
+        "zh": "从情绪分区，到具体分镜。",
+        "en": "From emotional pacing to storyboards."
       },
       "paragraphs": [
         {
           "zh": "我主导了游戏全部分镜策划，并参与故事设计，将成长经历落实为具体场景与画面顺序。分镜、故事与交互围绕同一条人生时间线展开，让玩家在日常片段中认识主角和这座城市。",
           "en": "I led all of the game's storyboarding and contributed to story design, organizing the protagonist's life into scenes and their visual sequence. Storyboards, narrative and interactions follow the same timeline through everyday moments."
+        },
+        {
+          "zh": "分镜草稿用颜色区分“舒缓、欢快、忧伤、希望”四种情绪，并并列呈现镜头顺序与音乐基调。这份过程材料展示了画面编排背后的节奏设计。",
+          "en": "The storyboard draft uses color to distinguish four moods: calm, cheerful, sorrowful and hopeful. Shot order and music cues are shown together, documenting the emotional pacing behind the visual sequence."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/xiaoya-de-jiang/emotion-storyboard.jpg",
+          "caption": {
+            "zh": "情绪与音乐分区草稿 · 本人提供的分镜过程材料；主导全部分镜策划",
+            "en": "Emotional pacing and music-cue draft · Author-supplied process material; I led all storyboarding"
+          }
         }
       ]
     },
@@ -121,6 +134,20 @@
         {
           "zh": "游戏选择轻操作、无失败惩罚的基调。我参与整体设计与基调敲定，让玩家可以慢慢看、轻轻动，把注意力留给场景、记忆与成长。",
           "en": "I also helped establish the game's overall direction and tone: light interaction without failure penalties, leaving players time to observe the scenes and follow the protagonist's growth."
+        },
+        {
+          "zh": "27 格场景编排图进一步展示了故事与操作如何交错：09—11 格是出门过早、点餐与制作；16—19 格由课本题目衔接车站轨道谜题与上车；22—27 格以高铁返乡、拍照和擦拭照片回望武汉。图中呈现的是场景与交互编排，实际游玩以试玩版本为准。",
+          "en": "The 27-panel sequence connects narrative and actions: panels 09–11 cover breakfast, ordering and preparation; 16–19 move from textbook questions to a rail puzzle and boarding; 22–27 return to Wuhan through a high-speed train journey, photography and wiping a photograph. This board documents the planned scene and interaction sequence; the playable build is the reference for implemented gameplay."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/xiaoya-de-jiang/scene-sequence.jpg",
+          "long": true,
+          "caption": {
+            "zh": "27 格场景与交互编排图 · 本人提供的项目材料；点击放大或打开原图阅读",
+            "en": "27-panel scene and interaction sequence · Project material supplied by the author; enlarge or open the original to read"
+          }
         }
       ]
     },
@@ -136,8 +163,8 @@
           "en": "As team lead, I organized communication and collaboration. My production work covered all storyboarding and contributions to the story, levels, interactions and overall design. The team's programming and artwork are not presented as my individual work."
         },
         {
-          "zh": "项目已提供在线试玩和实机演示。下方保留现场展示照片与 GGJ 页面记录，分别呈现线下展示和作品发布情况。",
-          "en": "The game has an online playable build and a gameplay video. The presentation photo and GGJ page capture below document the live presentation and the published project."
+          "zh": "项目已提供在线试玩和实机演示。下方通过真实路演照片与风格化团队合影，分别展示线下分享和团队创作氛围；作品发布记录可通过页首 GGJ 作品页查看。",
+          "en": "An online playable build and gameplay video are available. The event photograph documents our presentation, while the stylized team portrait conveys the collaborative setting. The GGJ link above leads to the publication record."
         }
       ]
     }
@@ -146,21 +173,25 @@
     {
       "src": "/images/xiaoya-de-jiang/presentation.jpg",
       "caption": {
-        "zh": "《小伢的江》现场展示 · 本人提供的活动照片",
-        "en": "Grow in Wuhan presentation · Event photo supplied by the author"
+        "zh": "GGJ 项目现场展示 · 本人提供的活动照片",
+        "en": "GGJ live project presentation · Event photo supplied by the author"
       }
     },
     {
-      "src": "/images/xiaoya-de-jiang/ggj-page.png",
+      "src": "/images/xiaoya-de-jiang/team-illustration.jpg",
       "caption": {
-        "zh": "GGJ 作品页记录 · 本人提供的截图，包含拼图场景、分类与试玩入口",
-        "en": "GGJ project page · Author-supplied capture showing the puzzle scene, categories and play link"
+        "zh": "团队协作主题插画 · 风格化合影，非现场原始照片；团队视觉素材",
+        "en": "Team collaboration illustration · Stylized group portrait, not an unedited event photo; team visual material"
       }
     }
   ],
   "next": {
-    "zh": "后续可补充完整分镜与具体关卡的设计过程。",
-    "en": "Further documentation can show the complete storyboards and individual level design decisions."
+    "zh": "补充具体关卡的迭代记录与试玩反馈。",
+    "en": "Document individual level iterations and player feedback."
   },
-  "devlog": []
+  "devlog": [],
+  "cardHighlight": {
+    "zh": "GGJ 现场组队带队 · 主导全部分镜策划",
+    "en": "Led an on-site GGJ team · All storyboarding"
+  }
 }

@@ -5,18 +5,57 @@
   "status": "design",
   "genre": "strategy",
   "updatedAt": "2026-09-07",
-  "name": {"zh": "新游戏名称", "en": ""},
-  "subtitle": {"zh": "一句话说明设计命题", "en": ""},
-  "summary": {"zh": "说明目标体验、当前范围与已有产物。", "en": ""},
-  "role": {"zh": "如实填写本人职责", "en": ""},
-  "period": {"zh": "策划阶段", "en": ""},
-  "team": {"zh": "如实填写团队规模", "en": ""},
+  "name": {
+    "zh": "新游戏名称",
+    "en": ""
+  },
+  "subtitle": {
+    "zh": "一句话说明设计命题",
+    "en": ""
+  },
+  "summary": {
+    "zh": "说明目标体验、当前范围与已有产物。",
+    "en": ""
+  },
+  "role": {
+    "zh": "如实填写本人职责",
+    "en": ""
+  },
+  "period": {
+    "zh": "策划阶段",
+    "en": ""
+  },
+  "team": {
+    "zh": "如实填写团队规模",
+    "en": ""
+  },
   "cover": null,
   "tags": [],
   "results": [],
   "links": [],
-  "sections": [{"id": "design-question", "title": {"zh": "设计命题", "en": ""}, "paragraphs": [{"zh": "记录已有设计与验证计划；不把计划写成完成结果。", "en": ""}]}],
+  "sections": [
+    {
+      "id": "design-question",
+      "title": {
+        "zh": "设计命题",
+        "en": ""
+      },
+      "paragraphs": [
+        {
+          "zh": "记录已有设计与验证计划；不把计划写成完成结果。",
+          "en": ""
+        }
+      ]
+    }
+  ],
   "gallery": [],
-  "next": {"zh": "下一步要回答的验证问题", "en": ""},
-  "devlog": []
+  "next": {
+    "zh": "下一步要回答的验证问题",
+    "en": ""
+  },
+  "devlog": [],
+  "cardHighlight": {
+    "zh": "填写可核实的核心成果",
+    "en": "Add a verifiable project outcome"
+  }
 }

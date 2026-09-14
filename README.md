@@ -20,7 +20,9 @@
 
 在项目 `devlog` 数组追加 `{ "date":"2026-09-07", "title":{"zh":"本次标题","en":"Title"}, "description":{"zh":"实际完成内容","en":"What changed"}, "evidence":"/projects/my-game/evidence.png", "next":{"zh":"下一步","en":"Next"} }`。证据可省略，不能使用虚构链接。更新 `status` 与 `updatedAt`；保持成果与状态独立。
 
-`featured: null` 表示仅进入全部作品；正整数决定首页顺序。目前 1 为乱世执棋、2 为万朝战域，新增作品不自动打乱该顺序。
+`featured: null` 表示仅进入全部作品；非负整数决定首页顺序。目前 0 为小伢的江、1 为乱世执棋、2 为万朝战域，新增作品不自动打乱该顺序。
+
+项目正文的每个 section 可使用 `images: [{ src, caption: { zh, en }, long: true }]` 添加带双语说明的过程图片。`long` 用于分镜长图，放大后可滚动阅读，并提供原图入口。图注应区分设计方案、实机、现场照片和风格化插画，避免将团队美术误写为个人贡献。
 
 ## 新增拆解
 
@@ -29,6 +31,8 @@
 可选 `englishBody` 指向英文摘要 Markdown；没有英文正文时展示英文摘要与中文全文入口。`tablesFile` / `sourcesFile` 决定各自的证据与来源，避免新文章混用旧研究内容。首页精选拆解由 content/site.json 的 featuredAnalysis 单独指定。游戏类型、研究主题和游戏筛选来自公开元数据，查询保存在 URL。
 
 ## 更新 PDF
+
+网页图片使用 `content/image-variants.json` 中的 WebP 衍生图，原件保留供灯箱查看和下载。更换图片后，可用 `node scripts/optimize-images.mjs <sharp模块路径>` 更新衍生图；提交 public/optimized 和图片清单，不需要线上图片服务。作品卡片可通过 `cardHighlight` 提供简明且可核实的成果，未填写时沿用第一项 results。PDF 在展开预览后才开始加载。
 
 放入 `public/pdf/`，然后在 `content/downloads.json` 添加 id、group、双语 title、url、size、version、updatedAt。简历 group 为 `resume`，万朝文档为 `wanchao-zhanyu`，无畏契约为 `valorant`。新文章可使用自己的 `downloadGroup`，默认使用 slug。只登记真实可打开的 PDF。桌面支持按需展开预览，手机提供打开/下载。
 

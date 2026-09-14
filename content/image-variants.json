@@ -1,0 +1,417 @@
+{
+  "/images/luanshi-booth.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/images/luanshi-booth-480.webp",
+        "width": 480,
+        "bytes": 26060
+      },
+      {
+        "src": "/optimized/images/luanshi-booth-960.webp",
+        "width": 960,
+        "bytes": 70126
+      },
+      {
+        "src": "/optimized/images/luanshi-booth-1600.webp",
+        "width": 1600,
+        "bytes": 130870
+      }
+    ]
+  },
+  "/images/luanshi-game.png": {
+    "width": 2048,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "/optimized/images/luanshi-game-480.webp",
+        "width": 480,
+        "bytes": 33134
+      },
+      {
+        "src": "/optimized/images/luanshi-game-960.webp",
+        "width": 960,
+        "bytes": 92842
+      },
+      {
+        "src": "/optimized/images/luanshi-game-1600.webp",
+        "width": 1600,
+        "bytes": 171092
+      }
+    ]
+  },
+  "/images/luanshi-presentation.jpg": {
+    "width": 1600,
+    "height": 1066,
+    "variants": [
+      {
+        "src": "/optimized/images/luanshi-presentation-480.webp",
+        "width": 480,
+        "bytes": 30190
+      },
+      {
+        "src": "/optimized/images/luanshi-presentation-960.webp",
+        "width": 960,
+        "bytes": 86012
+      },
+      {
+        "src": "/optimized/images/luanshi-presentation-1600.webp",
+        "width": 1600,
+        "bytes": 177428
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/cover.png": {
+    "width": 1875,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/cover-480.webp",
+        "width": 480,
+        "bytes": 16238
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/cover-960.webp",
+        "width": 960,
+        "bytes": 68580
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/cover-1600.webp",
+        "width": 1600,
+        "bytes": 158726
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/emotion-storyboard.jpg": {
+    "width": 854,
+    "height": 638,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/emotion-storyboard-480.webp",
+        "width": 480,
+        "bytes": 22162
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/emotion-storyboard-854.webp",
+        "width": 854,
+        "bytes": 56172
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/ggj-page.png": {
+    "width": 2549,
+    "height": 1473,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/ggj-page-480.webp",
+        "width": 480,
+        "bytes": 24254
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/ggj-page-960.webp",
+        "width": 960,
+        "bytes": 67174
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/ggj-page-1600.webp",
+        "width": 1600,
+        "bytes": 131648
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/poster.jpg": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/poster-480.webp",
+        "width": 480,
+        "bytes": 31000
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/poster-960.webp",
+        "width": 960,
+        "bytes": 90048
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/poster-1600.webp",
+        "width": 1600,
+        "bytes": 180794
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/presentation.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/presentation-480.webp",
+        "width": 480,
+        "bytes": 27742
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/presentation-960.webp",
+        "width": 960,
+        "bytes": 80178
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/presentation-1600.webp",
+        "width": 1600,
+        "bytes": 144850
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/scene-sequence.jpg": {
+    "width": 1280,
+    "height": 2448,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/scene-sequence-480.webp",
+        "width": 480,
+        "bytes": 102404
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/scene-sequence-960.webp",
+        "width": 960,
+        "bytes": 279008
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/scene-sequence-1280.webp",
+        "width": 1280,
+        "bytes": 385318
+      }
+    ]
+  },
+  "/images/xiaoya-de-jiang/team-illustration.jpg": {
+    "width": 1447,
+    "height": 1053,
+    "variants": [
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/team-illustration-480.webp",
+        "width": 480,
+        "bytes": 48678
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/team-illustration-960.webp",
+        "width": 960,
+        "bytes": 141680
+      },
+      {
+        "src": "/optimized/images/xiaoya-de-jiang/team-illustration-1447.webp",
+        "width": 1447,
+        "bytes": 230042
+      }
+    ]
+  },
+  "/analysis/valorant/c001_fakeout.jpg": {
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/c001_fakeout-480.webp",
+        "width": 480,
+        "bytes": 27868
+      },
+      {
+        "src": "/optimized/analysis/valorant/c001_fakeout-960.webp",
+        "width": 960,
+        "bytes": 65356
+      },
+      {
+        "src": "/optimized/analysis/valorant/c001_fakeout-1080.webp",
+        "width": 1080,
+        "bytes": 71660
+      }
+    ]
+  },
+  "/analysis/valorant/c004_analysis.png": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/c004_analysis-480.webp",
+        "width": 480,
+        "bytes": 24258
+      },
+      {
+        "src": "/optimized/analysis/valorant/c004_analysis-960.webp",
+        "width": 960,
+        "bytes": 72550
+      },
+      {
+        "src": "/optimized/analysis/valorant/c004_analysis-1600.webp",
+        "width": 1600,
+        "bytes": 147690
+      }
+    ]
+  },
+  "/analysis/valorant/e002_ace.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/e002_ace-480.webp",
+        "width": 480,
+        "bytes": 24758
+      },
+      {
+        "src": "/optimized/analysis/valorant/e002_ace-960.webp",
+        "width": 960,
+        "bytes": 63826
+      },
+      {
+        "src": "/optimized/analysis/valorant/e002_ace-1600.webp",
+        "width": 1600,
+        "bytes": 120462
+      }
+    ]
+  },
+  "/analysis/valorant/g001_analysis.png": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/g001_analysis-480.webp",
+        "width": 480,
+        "bytes": 31730
+      },
+      {
+        "src": "/optimized/analysis/valorant/g001_analysis-960.webp",
+        "width": 960,
+        "bytes": 95290
+      },
+      {
+        "src": "/optimized/analysis/valorant/g001_analysis-1600.webp",
+        "width": 1600,
+        "bytes": 198410
+      }
+    ]
+  },
+  "/analysis/valorant/g002_defuse.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/g002_defuse-480.webp",
+        "width": 480,
+        "bytes": 18186
+      },
+      {
+        "src": "/optimized/analysis/valorant/g002_defuse-960.webp",
+        "width": 960,
+        "bytes": 46628
+      },
+      {
+        "src": "/optimized/analysis/valorant/g002_defuse-1600.webp",
+        "width": 1600,
+        "bytes": 89246
+      }
+    ]
+  },
+  "/analysis/valorant/g003_counterexample.jpg": {
+    "width": 2560,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/g003_counterexample-480.webp",
+        "width": 480,
+        "bytes": 16484
+      },
+      {
+        "src": "/optimized/analysis/valorant/g003_counterexample-960.webp",
+        "width": 960,
+        "bytes": 46156
+      },
+      {
+        "src": "/optimized/analysis/valorant/g003_counterexample-1600.webp",
+        "width": 1600,
+        "bytes": 93692
+      }
+    ]
+  },
+  "/analysis/valorant/g005_objective.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/g005_objective-480.webp",
+        "width": 480,
+        "bytes": 25950
+      },
+      {
+        "src": "/optimized/analysis/valorant/g005_objective-960.webp",
+        "width": 960,
+        "bytes": 68904
+      },
+      {
+        "src": "/optimized/analysis/valorant/g005_objective-1600.webp",
+        "width": 1600,
+        "bytes": 132350
+      }
+    ]
+  },
+  "/analysis/valorant/g006_finish.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/g006_finish-480.webp",
+        "width": 480,
+        "bytes": 20998
+      },
+      {
+        "src": "/optimized/analysis/valorant/g006_finish-960.webp",
+        "width": 960,
+        "bytes": 52906
+      },
+      {
+        "src": "/optimized/analysis/valorant/g006_finish-1600.webp",
+        "width": 1600,
+        "bytes": 103258
+      }
+    ]
+  },
+  "/analysis/valorant/g007_space.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/g007_space-480.webp",
+        "width": 480,
+        "bytes": 24554
+      },
+      {
+        "src": "/optimized/analysis/valorant/g007_space-960.webp",
+        "width": 960,
+        "bytes": 62454
+      },
+      {
+        "src": "/optimized/analysis/valorant/g007_space-1600.webp",
+        "width": 1600,
+        "bytes": 121630
+      }
+    ]
+  },
+  "/analysis/valorant/hero_g006.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/optimized/analysis/valorant/hero_g006-480.webp",
+        "width": 480,
+        "bytes": 24202
+      },
+      {
+        "src": "/optimized/analysis/valorant/hero_g006-960.webp",
+        "width": 960,
+        "bytes": 65658
+      },
+      {
+        "src": "/optimized/analysis/valorant/hero_g006-1600.webp",
+        "width": 1600,
+        "bytes": 125574
+      }
+    ]
+  }
+}

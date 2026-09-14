@@ -4,7 +4,7 @@
   "featured": 2,
   "status": "development",
   "genre": "rts-slg",
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-10",
   "name": {
     "zh": "万朝战域",
     "en": "Wanchao Zhanyu"
@@ -14,16 +14,16 @@
     "en": "From waiting for reports to shaping the battle."
   },
   "summary": {
-    "zh": "原创多人 RTS / SLG。用三阵营地形、资源与道路，让即时操作和战略选择共同改变战争结果。",
-    "en": "An original multiplayer RTS / SLG where faction terrain, resources and routes connect real-time control with strategic decisions."
+    "zh": "多人 RTS / SLG 设计：围绕三阵营、资源与道路，推演外围扩张和中央争夺的取舍。",
+    "en": "A multiplayer RTS / SLG design exploring three factions, contested resources and perimeter-versus-center choices."
   },
   "role": {
     "zh": "个人主导 · 独立负责策划",
     "en": "Project Initiator · Sole Game Designer"
   },
   "period": {
-    "zh": "制作中 · 地图灰盒待验证",
-    "en": "In development · greybox validation next"
+    "zh": "策划案已完成 · 下一步制作地图灰盒",
+    "en": "GDD complete · Map greybox next"
   },
   "team": {
     "zh": "合作项目",
@@ -164,5 +164,9 @@
     "en": "Build a minimal three-faction greybox to test route choices and recovery."
   },
   "devlog": [],
-  "diagram": "three-faction-map"
+  "diagram": "three-faction-map",
+  "cardHighlight": {
+    "zh": "完整策划案 · 30 分钟文字演示与地图方案",
+    "en": "Complete GDD · 30-minute text walkthrough and map plan"
+  }
 }
