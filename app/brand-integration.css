@@ -1,0 +1,21 @@
+/* Marks share one ink treatment and the site's spacing, without board panels. */
+.brand-ink-definitions{position:absolute;overflow:hidden;pointer-events:none}
+.brand-art>img{filter:url(#t1ar-brand-ink)}
+.brand-art{mix-blend-mode:normal!important}
+.brand-lockup-integrated{gap:.5rem}
+.brand-lockup-integrated>.brand-art-symbol{width:32px}
+.brand-lockup-integrated .brand-word strong{font-size:1.35rem;letter-spacing:.07em;line-height:1}
+.brand-lockup-integrated .brand-word small{font-size:.6875rem;letter-spacing:.3em;margin-left:0}
+.site-header .approved-wordmark{min-height:44px;display:flex;align-items:center}
+.site-footer .brand-footer-signature>.brand-art-signature{width:116px}
+.site-footer .footer-easter-egg{border-color:transparent;box-shadow:none}
+.site-footer .footer-easter-egg>.brand-art-symbol{width:23px}
+.site-footer .footer-easter-egg:hover{background:#182d49;box-shadow:0 0 18px #719eff24}
+.personal-card-front>.brand-art-vertical{width:104px}
+.personal-card-heading .brand-art-symbol{width:30px;opacity:.72}
+.personal-card-signoff>.brand-art-signature{width:80px;opacity:.85}
+.personal-card-signoff{border-color:#40527080}
+.character-hero-content .brand-art-calligraphy{width:clamp(210px,25vw,320px);filter:none}
+.character-lost-note .brand-art-signature{width:108px;opacity:.8}
+.brand-arrival-emblem .brand-art{width:95px;filter:none}
+@media(max-width:700px){.approved-wordmark .brand-lockup-integrated>.brand-art-symbol{width:29px}.brand-lockup-integrated .brand-word strong{font-size:1.2rem}.brand-lockup-integrated .brand-word small{font-size:.625rem}.site-footer .brand-footer-signature>.brand-art-signature{width:104px}}

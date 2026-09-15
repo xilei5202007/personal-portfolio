@@ -18,7 +18,9 @@ export function BrandArt({kind,className='',alt='',priority=false}:{kind:keyof t
  const imageStyle:CSSProperties={width:`${c.width/c.w*100}%`,height:`${c.height/c.h*100}%`,left:`${-c.x/c.w*100}%`,top:`${-c.y/c.h*100}%`};
  return <span className={`brand-art brand-art-${kind} ${className}`} style={style}><img src={`/brand/${c.src}.webp`} alt={alt} style={imageStyle} loading={priority?'eager':'lazy'} fetchPriority={priority?'high':'auto'} decoding="async" width={c.width} height={c.height}/></span>;
 }
-export function BrandMark(){return <span className="brand-lockup brand-lockup-approved"><BrandArt kind="horizontal"/></span>}
-export function BrandPageMark(){return <div className="brand-page-mark" aria-hidden="true"><BrandArt kind="wordmark"/><span/><small>TRACE THE PAST · CREATE THE NEXT</small></div>}
-export function BrandSignature(){return <span className="brand-footer-signature"><BrandArt kind="signature"/><small>SEE · THINK · CREATE</small></span>}
+// Render the supplied marks as silver ink, removing the board's dark paper.
+// Source images remain intact; this shared SVG filter supplies transparent edges.
+export function BrandInkFilter(){return <svg width="0" height="0" className="brand-ink-definitions" aria-hidden="true" focusable="false"><defs><filter id="t1ar-brand-ink" colorInterpolationFilters="sRGB"><feColorMatrix in="SourceGraphic" type="luminanceToAlpha" result="luminance"/><feComponentTransfer in="luminance" result="inkAlpha"><feFuncA type="linear" slope="1.25" intercept="-0.11"/></feComponentTransfer><feFlood floodColor="#e0eaff" result="silver"/><feComposite in="silver" in2="inkAlpha" operator="in"/></filter></defs></svg>}
+export function BrandMark(){return <span className="brand-lockup brand-lockup-integrated"><BrandArt kind="symbol"/><span className="brand-word"><strong>T1ar</strong><small>昔泪</small></span></span>}
+export function BrandSignature(){return <span className="brand-footer-signature"><BrandArt kind="signature"/></span>}
 export function IdentityEmblem({lang}:{lang:Lang}){return <div className="identity-emblem"><BrandArt kind="seal" priority alt={lang==='zh'?'昔泪 T1ar 星光标志':'T1ar starlight emblem'}/><span className="emblem-caption">{lang==='zh'?'看见 · 思考 · 创造':'SEE · THINK · CREATE'}</span></div>}
