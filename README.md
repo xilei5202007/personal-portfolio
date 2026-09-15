@@ -45,3 +45,9 @@
 个人信息在 `content/profile.json`，术语在 `content/glossary.json`，视觉在 `app/portfolio.css`。所有当前字体均采用系统字体回退，无远程字体依赖。交互音为本地 Web Audio 合成，默认关闭并记住选择；无背景音乐。图示是策划示意，不代表引擎实机。
 
 `.openai/hosting.json` 绑定现有 Sites 项目。使用 Sites 保存版本并私密发布；正式公开前完成 `../docs/IMPLEMENTATION_STATUS.md` 中仍待确认的素材。不要将个人关机脚本或本地工具放入网站，相关文件仅位于 `../docs/local-tools/`。
+
+## 2026-09-15 品牌定稿接入
+
+使用用户提供的标志定稿：星光符号、组合标和签名，搭配银黑冰蓝配色。页面中的标志以原设计图视窗呈现，不重新绘制几何。`public/brand/logo-board.png` 保留原件，WebP 用于显示；`scripts/prepare-brand.mjs` 生成格式副本与嵌入标志视窗的 favicon。`components/brand-identity.tsx` 维护各标志的显示范围。
+
+按用户最新要求，个人角色形象暂时搁置，不在本版展示。角色资料保存在网站之外的 `../docs/shelved-brand/`。原有作品、试玩入口、阅读导航、简历资料和作品切换保留。
