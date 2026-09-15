@@ -1,0 +1,154 @@
+/* Homepage project interactions share the identity's silver-blue light. */
+.home-page .selected-section {
+  --project-light: #b8d2ff;
+  --project-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+.home-page :is(.work-image, .showcase-image) {
+  position: relative;
+  isolation: isolate;
+  transition: box-shadow 350ms ease, border-color 350ms ease;
+}
+
+.home-page .project-frame {
+  position: absolute;
+  inset: 10px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    linear-gradient(var(--project-light), var(--project-light)) left top / 26px 1px,
+    linear-gradient(var(--project-light), var(--project-light)) left top / 1px 26px,
+    linear-gradient(var(--project-light), var(--project-light)) right bottom / 26px 1px,
+    linear-gradient(var(--project-light), var(--project-light)) right bottom / 1px 26px;
+  background-repeat: no-repeat;
+  transition: opacity 250ms ease;
+}
+
+.home-page :is(.work-image, .showcase-image)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 30%, #d8e7ff00 40%, #e0ecff38 50%, #d8e7ff00 60%, transparent 70%);
+  transform: translateX(-110%);
+}
+
+.home-page .work-image .status-badge { z-index: 3; }
+
+.home-page .work-image .project-entry {
+  z-index: 3;
+  width: auto;
+  height: 46px;
+  min-width: 46px;
+  padding: 0 14px;
+  background: #101e34f2;
+  color: #e4eeff;
+  border-top: 1px solid #b8d2ff66;
+  border-left: 1px solid #b8d2ff66;
+  transition: background 250ms ease, color 250ms ease;
+}
+
+.home-page .project-entry-label {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: .75rem;
+  letter-spacing: .08em;
+  transition: max-width 350ms var(--project-ease), opacity 200ms ease, margin 350ms var(--project-ease);
+}
+
+.home-page :is(.project-entry, .showcase-arrow) svg {
+  flex-shrink: 0;
+  transition: transform 350ms var(--project-ease);
+}
+
+.home-page .work-info h3 a { transition: background-size 350ms ease, color 250ms ease; }
+.home-page .work-number { transition: color 250ms ease; }
+.home-page .featured-viewer .showcase-caption h2 { transition: color 250ms ease; }
+.home-page .featured-viewer .showcase-entry-label {
+  display: block;
+  margin-top: 1rem;
+  color: #b7cbed;
+  font-size: .75rem;
+  letter-spacing: .08em;
+  transition: color 250ms ease;
+}
+.home-page .featured-viewer .showcase-arrow { flex-shrink: 0; }
+
+/* A keyboard focus reveals the same destination cue without relying on hover. */
+.home-page .work-image:focus-visible,
+.home-page .showcase-project:focus-visible .showcase-image {
+  border-color: #88b0ef;
+  box-shadow: 0 12px 32px #4268b529, inset 0 0 0 1px #a6c5ff;
+}
+.home-page .work-image:focus-visible .project-frame,
+.home-page .showcase-project:focus-visible .project-frame { opacity: 1; }
+.home-page .work-image:focus-visible .project-entry-label {
+  max-width: 10rem;
+  margin-right: 12px;
+  opacity: 1;
+}
+.home-page .work-image:focus-visible .project-entry,
+.home-page .featured-viewer .showcase-project:focus-visible .showcase-arrow {
+  background: #c8dcff;
+  color: #142440;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-page .work-image:hover,
+  .home-page .showcase-project:hover .showcase-image {
+    border-color: #88b0ef;
+    box-shadow: 0 16px 38px #4268b52b, inset 0 0 0 1px #a6c5ff;
+  }
+  .home-page .work-image:hover .project-frame,
+  .home-page .showcase-project:hover .project-frame { opacity: 1; }
+  .home-page .work-image:hover .project-entry-label {
+    max-width: 10rem;
+    margin-right: 12px;
+    opacity: 1;
+  }
+  .home-page .work-image:hover .project-entry,
+  .home-page .featured-viewer .showcase-project:hover .showcase-arrow {
+    background: #c8dcff;
+    color: #142440;
+  }
+  .home-page .work-card:has(.work-image:hover) :is(.work-info h3 a, .work-number) { color: #3156b0; }
+  .home-page .work-card:has(.work-image:hover) .work-info h3 a { background-size: 100% 2px; }
+  .home-page .featured-viewer .showcase-project:hover :is(h2, .showcase-entry-label) { color: #c8dcff; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-page .work-image:focus-visible::after,
+  .home-page .showcase-project:focus-visible .showcase-image::after { animation: project-light-pass 850ms var(--project-ease) both; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .home-page .work-image:hover::after,
+  .home-page .showcase-project:hover .showcase-image::after { animation: project-light-pass 850ms var(--project-ease) both; }
+  .home-page .work-image:hover .project-entry svg,
+  .home-page .showcase-project:hover .showcase-arrow svg { transform: translate(2px, -2px); }
+}
+@keyframes project-light-pass {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(110%); }
+}
+
+/* Full posters and tactical diagrams stay still and readable. */
+.home-page .work-xiaoya-de-jiang .work-image > img,
+.home-page .showcase-image > img { transform: none; }
+
+@media (hover: none), (pointer: coarse) {
+  .home-page .project-entry-label { max-width: 10rem; margin-right: 10px; opacity: 1; }
+  .home-page .work-image:hover > img { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page :is(.work-image, .showcase-image)::after { display: none; }
+  .home-page :is(.project-frame, .project-entry, .project-entry-label, .showcase-arrow, .showcase-entry-label, .work-number),
+  .home-page :is(.project-entry, .showcase-arrow) svg,
+  .home-page .work-info h3 a,
+  .home-page .featured-viewer .showcase-caption h2 { transition: none; }
+  .home-page .work-image:hover > img,
+  .home-page .featured-viewer .showcase-project:hover .showcase-arrow { transform: none; }
+}
