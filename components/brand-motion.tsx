@@ -1,11 +1,13 @@
 'use client';
 
 import {useEffect, useRef, useState} from 'react';
+import {usePathname} from 'next/navigation';
 import {BrandArt} from './brand-identity';
 import type {Lang} from '@/lib/types';
 import {mountPointerTrail} from '@/lib/pointer-trail';
 
 export function BrandMotion({lang}:{lang:Lang}) {
+ const chessArrival=usePathname()?.endsWith('/projects/luanshi-zhiqi');
  const [ready, setReady] = useState(false);
  const [departing, setDeparting] = useState(false);
  const sparks = useRef<HTMLDivElement>(null);
@@ -61,10 +63,10 @@ export function BrandMotion({lang}:{lang:Lang}) {
  }, []);
 
  return <>
-  <div className={`brand-arrival${ready?' is-ready':''}`} aria-hidden="true">
+  <div className={`brand-arrival${ready?' is-ready':''}${chessArrival?' chess-arrival':''}`} aria-hidden="true">
    <div className="brand-arrival-center">
-    <div className="brand-arrival-emblem"><i className="brand-orbit"/><BrandArt kind="symbol" priority/><i className="brand-arrival-flare"/></div>
-    <span className="brand-arrival-word">T1AR <small>昔泪</small></span>
+    {chessArrival?<div className="chess-arrival-board"><span className="chess-arrival-ring"/><span className="chess-arrival-stone">执</span></div>:<div className="brand-arrival-emblem"><i className="brand-orbit"/><BrandArt kind="symbol" priority/><i className="brand-arrival-flare"/></div>}
+    <span className="brand-arrival-word">{chessArrival?(lang==='zh'?'落子之痕':'A MOVE, A TRACE'):'T1AR'} <small>{chessArrival?(lang==='zh'?'昔泪 · 乱世执棋':'T1AR · LUANSHI ZHIQI'):'昔泪'}</small></span>
     <div className="brand-loading-line"><span/></div>
     <span className="brand-arrival-caption">TRACE THE PAST · CREATE THE NEXT</span>
    </div>

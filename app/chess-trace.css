@@ -1,0 +1,104 @@
+/* A stone is T1ar's trace in this project; routes explain design, not game rules. */
+.chess-trace-mark {position:absolute;inset:0;z-index:2;pointer-events:none;display:grid;place-items:center;overflow:hidden}
+.chess-mark-grid {position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,#0c172429,#07101ce6),repeating-linear-gradient(0deg,transparent 0 39px,#bdd5ff38 40px 41px),repeating-linear-gradient(90deg,transparent 0 39px,#bdd5ff38 40px 41px);transition:opacity .35s}
+.chess-mark-stone,.chess-arrival-stone {display:grid;place-items:center;width:66px;height:66px;border-radius:50%;background:radial-gradient(circle at 35% 22%,#fffdf5,#e7e3d8 68%,#a8a398 100%);border:1px solid #fff4d8;color:#29334a;font:32px 'Noto Serif SC','Songti SC',serif;box-shadow:0 7px 0 #8e929f,0 16px 26px #0008,inset 0 0 0 6px #beb8a459;position:relative}
+.chess-mark-stone {opacity:0;transform:translateY(12px) scale(.9);transition:transform .4s cubic-bezier(.22,1,.36,1),opacity .3s}
+.chess-mark-stone::after {content:'';position:absolute;inset:-14px;border:1px solid #c4dbff99;border-radius:50%;box-shadow:0 0 24px #91baff33;opacity:0;transition:opacity .3s}
+.chess-mark-caption {position:absolute;bottom:20px;left:16px;color:#edf2ff;font-size:.875rem;letter-spacing:.06em;opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s;max-width:calc(100% - 76px)}
+.work-luanshi-zhiqi .work-image .status-badge,.work-luanshi-zhiqi .work-image .image-link {z-index:3}
+.showcase-chess .showcase-image {position:relative;isolation:isolate}
+.home-page .work-luanshi-zhiqi .work-image::after,.home-page .showcase-chess .showcase-image::after {display:none}
+.home-page .work-luanshi-zhiqi .work-image:hover>img {transform:none}
+.work-luanshi-zhiqi .work-image:focus-visible :is(.chess-mark-grid,.chess-mark-stone,.chess-mark-caption),
+.showcase-chess:focus-visible :is(.chess-mark-grid,.chess-mark-stone,.chess-mark-caption) {opacity:1;transform:none}
+.work-luanshi-zhiqi .work-image:focus-visible .chess-mark-stone::after,.showcase-chess:focus-visible .chess-mark-stone::after {opacity:1}
+@media (hover:hover) and (pointer:fine) {
+ .work-luanshi-zhiqi .work-image:hover :is(.chess-mark-grid,.chess-mark-stone,.chess-mark-caption),.showcase-chess:hover :is(.chess-mark-grid,.chess-mark-stone,.chess-mark-caption) {opacity:1;transform:none}
+ .work-luanshi-zhiqi .work-image:hover .chess-mark-stone::after,.showcase-chess:hover .chess-mark-stone::after {opacity:1}
+ .work-luanshi-zhiqi .work-image:active .chess-mark-stone,.showcase-chess:active .chess-mark-stone {transform:translateY(5px);box-shadow:0 2px 0 #8e929f,0 6px 12px #0008}
+}
+.home-page .featured-viewer .showcase-chess .chess-mark-caption {display:none}
+.home-page .featured-viewer .showcase-chess .chess-mark-stone {width:50px;height:50px;font-size:26px}
+
+.chess-arrival-board {width:220px;height:170px;position:relative;display:grid;place-items:center;margin-bottom:25px;background:repeating-linear-gradient(0deg,transparent 0 31px,#a3c3f52e 32px 33px),repeating-linear-gradient(90deg,transparent 0 31px,#a3c3f52e 32px 33px);mask-image:radial-gradient(ellipse,#000 25%,#000b 60%,transparent 74%)}
+.chess-arrival-ring {position:absolute;width:110px;height:110px;border-radius:50%;border:1px solid #b6d3ff;opacity:0}
+.chess-arrival .brand-arrival-word {font-size:24px;letter-spacing:.16em}
+.chess-arrival .brand-arrival-word small {font-size:14px;letter-spacing:.08em}
+
+.chess-trace {--trace-silver:#b8d2ff;scroll-margin-top:110px;margin:0 0 4rem;padding:clamp(1.2rem,3.5vw,3rem);color:#e9eef8;background:radial-gradient(ellipse at 12% 45%,#1b2c45,transparent 65%),#0c1422;border:1px solid #344660;position:relative;isolation:isolate}
+.chess-trace-heading {display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;border-bottom:1px solid #344660;padding-bottom:1.6rem;margin-bottom:1.8rem}
+.chess-trace-kicker,.chess-trace-index {font-size:.75rem;letter-spacing:.16em;color:#adc4e3}
+.chess-trace-heading h2 {font-family:'Noto Serif SC','Songti SC',Georgia,serif;font-size:clamp(1.65rem,2.7vw,2.5rem);color:#f2f1e9;margin:.6rem 0;letter-spacing:.08em}
+.chess-trace-heading p {font-size:1rem;color:#b6c5dc;line-height:1.8;margin:0;max-width:650px}
+.chess-trace-index {white-space:nowrap;padding-top:.3rem}
+.chess-trace-layout {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,4rem)}
+.chess-trace-surface,.chess-trace-reading {min-width:0}
+.chess-trace-author {display:flex;align-items:center;gap:1rem;border-bottom:1px solid #8aa8d233;padding-bottom:1rem}
+.chess-trace-author img {width:76px;height:90px;object-fit:cover;object-position:26% 45%;flex-shrink:0;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 80%,transparent)}
+.chess-trace-author strong {display:block;font-weight:500;font-size:1rem;color:#e7dfcd;line-height:1.6}
+.chess-trace-author small {display:block;margin-top:.35rem;font-size:.875rem;line-height:1.7;color:#b6c5dc}
+.chess-trace-board {height:310px;position:relative;margin:1rem 0 .4rem;background:repeating-linear-gradient(0deg,transparent 0 39px,#9dbae91c 40px 41px),repeating-linear-gradient(90deg,transparent 0 39px,#9dbae91c 40px 41px);border:1px solid #8aa8d22e}
+.chess-trace-lines {position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;fill:none;stroke:#c5d9fc}
+.chess-trace-lines path {vector-effect:non-scaling-stroke;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.chess-trace-lines .chess-trace-possible {stroke:#7f9cbe5c;stroke-dasharray:3 6}
+.chess-trace-lines .chess-trace-route {stroke:#c7dcff;stroke-width:2;filter:drop-shadow(0 0 3px #8eb5ff)}
+.chess-trace-lines circle {fill:#c7dcff;stroke:none}
+.chess-trace-node {position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:106px;min-height:98px;background:transparent;border:0;padding:4px;color:#c4d0e3;isolation:isolate;border-radius:6px}
+.chess-trace-stone {width:60px;height:60px;border:1px solid #7485a0;border-radius:50%;display:grid;place-items:center;font:28px 'Noto Serif SC','Songti SC',serif;color:#c4d0e3;background:radial-gradient(circle at 35% 20%,#3e4c64,#142035 80%);box-shadow:0 5px 0 #070f1c,0 10px 14px #0005,inset 0 0 0 5px #7485a022;transition:transform .25s,background .25s,color .25s}
+.chess-trace-node-label {font-size:.875rem;line-height:1.4;text-align:center;padding:2px 6px;background:#101b2af2;border-radius:2px}
+.chess-trace-node.is-selected .chess-trace-stone {color:#27364c;background:radial-gradient(circle at 35% 20%,#fffdf5,#e7e3d8 68%,#a8a398);border-color:#e3dcc8;box-shadow:0 5px 0 #8a8d98,0 10px 22px #0005,0 0 25px #b0caff29,inset 0 0 0 5px #beb8a440}
+.chess-trace-node.is-selected .chess-trace-node-label {color:#fff1d9}
+.chess-trace-node:focus-visible {outline:2px solid #c7dcff;outline-offset:5px}
+.chess-trace-origin {position:absolute;left:10%;bottom:10%;font-size:.75rem;color:#92a9c7;letter-spacing:.12em}
+.chess-trace-board-note {font-size:.875rem!important;line-height:1.7;color:#9cafc9;margin:.7rem 0 0}
+.chess-trace-panel {padding:1rem 0;scroll-margin-top:100px}
+.chess-trace-panel-index {font-size:.875rem;letter-spacing:.06em;color:#adc8f1}
+.chess-trace-panel h3 {font:500 clamp(1.4rem,2vw,1.9rem)/1.55 'Noto Serif SC','Songti SC',Georgia,serif;color:#f4efe4;margin:1rem 0 1.5rem;text-wrap:balance}
+.chess-trace-steps {list-style:none;padding:0;margin:0 0 1.5rem;border-top:1px solid #6f8caf44}
+.chess-trace-steps li {display:flex;align-items:baseline;gap:1rem;padding:.7rem 0;border-bottom:1px solid #6f8caf44;font-size:.9375rem;line-height:1.65;color:#d6e2f3}
+.chess-trace-steps li span {font:12px monospace;color:#95afce;flex-shrink:0}
+.chess-trace-panel p {font-size:1rem;line-height:1.9;color:#bccbe0;margin:0 0 1.4rem}
+.chess-trace-panel>a {display:inline-flex;align-items:center;gap:.7rem;color:#e8d9b5;font-size:.875rem;line-height:1.7;padding:.4rem 0;border-bottom:1px solid #caba974f}
+.chess-trace-panel>a:hover {color:white;border-color:#c7dcff}
+.chess-trace-footer {display:flex;justify-content:space-between;gap:1rem;border-top:1px solid #344660;margin-top:1.8rem;padding-top:1.2rem;font-size:.875rem;line-height:1.7;color:#a1b4d0}
+.chess-trace-footer>span:last-child {color:#d9c9a7}
+
+@media (hover:hover) and (pointer:fine) {
+ .chess-trace-node:not(.is-selected):hover .chess-trace-stone {transform:translateY(-4px);color:#fff1d9;border-color:#c7dcff}
+}
+@media (prefers-reduced-motion:no-preference) {
+ .chess-arrival-stone {animation:chess-place .5s cubic-bezier(.2,.8,.3,1) both}
+ .chess-arrival-ring {animation:chess-ring .55s .2s ease-out both}
+ .chess-trace-node.is-selected .chess-trace-stone {animation:chess-place .38s cubic-bezier(.2,.8,.3,1) both}
+ .chess-trace-route {stroke-dasharray:1;animation:chess-route .5s ease-out both}
+ .chess-trace-panel:not([hidden]) {animation:chess-notes .25s ease-out both}
+}
+@keyframes chess-place {from {transform:translateY(-24px) scale(1.08);opacity:.25} to {transform:translateY(0) scale(1);opacity:1}}
+@keyframes chess-ring {from {transform:scale(.5);opacity:.8} to {transform:scale(1.7);opacity:0}}
+@keyframes chess-route {from {stroke-dashoffset:1} to {stroke-dashoffset:0}}
+@keyframes chess-notes {from {opacity:.5;transform:translateY(5px)} to {opacity:1;transform:none}}
+
+@media (max-width:850px) {
+ .chess-trace-layout {grid-template-columns:1fr;gap:1.5rem}
+ .chess-trace-board {height:280px}
+ .chess-trace-reading {border-top:1px solid #344660;padding-top:.5rem}
+ .chess-trace-footer {flex-direction:column;gap:.5rem}
+}
+@media (max-width:480px) {
+ .chess-trace-index {display:none}
+ .chess-trace-node {width:86px;gap:10px}
+ .chess-trace-stone {width:52px;height:52px;font-size:26px}
+ .chess-trace-node-label {font-size:.875rem}
+ .chess-trace-author img {width:62px}
+ .chess-mark-caption {font-size:.875rem;bottom:12px}
+}
+@media (hover:none), (pointer:coarse) {
+ .chess-mark-stone {opacity:1;transform:none;width:38px;height:38px;font-size:20px;position:absolute;right:12px;top:12px;box-shadow:0 3px 0 #8e929f,0 6px 12px #0005}
+ .home-page .featured-viewer .showcase-chess .chess-mark-stone {width:38px;height:38px;font-size:20px}
+ .chess-mark-caption {display:none}
+}
+@media (prefers-reduced-motion:reduce) {
+ .chess-trace :is(*,::before,::after),.chess-trace-mark :is(*,::before,::after) {animation:none!important;transition:none!important}
+ .chess-trace-node:not(.is-selected):hover .chess-trace-stone {transform:none}
+ .chess-arrival-stone,.chess-arrival-ring {animation:none}
+}

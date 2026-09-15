@@ -3,6 +3,7 @@ import {useRef,useState} from 'react';
 import {ArrowUpRight} from 'lucide-react';
 import {ResponsiveImage} from './responsive-image';
 import {MapDiagram} from './project-visual';
+import {ChessTraceMark} from './chess-trace-mark';
 import {t,genreLabels,type Lang,type Project} from '@/lib/types';
 
 export function HeroShowcase({projects,lang}:{projects:Project[];lang:Lang}) {
@@ -14,8 +15,8 @@ export function HeroShowcase({projects,lang}:{projects:Project[];lang:Lang}) {
  return <div className="hero-showcase">
   <div className="showcase-top"><span>SELECTED WORK / 2026</span><span>{String(active+1).padStart(2,'0')} — {String(projects.length).padStart(2,'0')}</span></div>
   <div role="tabpanel" id="showcase-panel" aria-labelledby={`showcase-tab-${active}`} className="showcase-panel">
-   <a key={current.slug} className="showcase-project" href={`/${lang}/projects/${current.slug}`}>
-    <div className="showcase-image">{current.cover?<ResponsiveImage src={current.cover} alt={t(current.coverAlt??current.name,lang)} sizes="(max-width: 700px) 90vw, 45vw" fetchPriority={active===0?'high':'auto'}/>:<MapDiagram lang={lang} small/>}<span className="project-frame" aria-hidden="true"/></div>
+   <a key={current.slug} className={`showcase-project${current.slug==='luanshi-zhiqi'?' showcase-chess':''}`} href={`/${lang}/projects/${current.slug}`}>
+    <div className="showcase-image">{current.cover?<ResponsiveImage src={current.cover} alt={t(current.coverAlt??current.name,lang)} sizes="(max-width: 700px) 90vw, 45vw" fetchPriority={active===0?'high':'auto'}/>:<MapDiagram lang={lang} small/>}<span className="project-frame" aria-hidden="true"/>{current.slug==='luanshi-zhiqi'&&<ChessTraceMark lang={lang}/>}</div>
     <div className="showcase-caption"><div><span>{t(genreLabels[current.genre],lang)}</span><h2>{t(current.name,lang)}</h2><span className="showcase-entry-label">{lang==='zh'?'探索项目':'Explore project'}</span></div><span className="showcase-arrow" aria-hidden="true"><ArrowUpRight/></span></div>
    </a>
   </div>
