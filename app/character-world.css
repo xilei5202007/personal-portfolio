@@ -1,0 +1,38 @@
+.character-hero{isolation:isolate;position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:760px;min-height:max(760px,calc(100svh - 90px));margin:0 calc(-1 * var(--space));padding:1.4rem var(--space) 1.8rem;overflow:hidden;background:#060d19;color:#eaf1ff}
+.character-hero-scene,.character-lost-scene{position:absolute;inset:0;z-index:-2;pointer-events:none}
+.character-hero-scene img,.character-lost-scene img{width:100%;height:100%;object-fit:cover;object-position:center bottom}
+.character-hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#050b1580,transparent 25%,#07101c22 65%,#060c18d9),radial-gradient(ellipse at 50% 40%,#050b1566,transparent 60%);pointer-events:none}
+.character-hero-top,.character-hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;color:#b0c4e5;font-size:.6875rem;letter-spacing:.15em}
+.character-hero-content{align-self:center;text-align:center;width:min(100%,650px);padding:2.5rem 1rem 5.8rem}
+.character-hero-prelude{font-size:.875rem;color:#becde5;letter-spacing:.16em;margin:0 0 .8rem;line-height:1.9}
+.character-hero-content h1{margin:0;line-height:1;display:flex;justify-content:center}
+.character-hero-content .brand-art-calligraphy{width:clamp(220px,27vw,355px);mix-blend-mode:screen;filter:drop-shadow(0 0 24px #6a93ec26)}
+.character-hero-motto{font-family:'Noto Serif SC','Songti SC',Georgia,serif;font-size:clamp(1.2rem,2vw,1.6rem);color:#edf3ff;letter-spacing:.12em;line-height:1.8;margin:.7rem 0 1rem;text-shadow:0 2px 16px #030918}
+.character-hero-description{white-space:pre-line;font-size:.9375rem;line-height:1.9;color:#bccce6;margin:0 auto 1.7rem;max-width:470px;text-wrap:pretty;text-shadow:0 1px 6px #030918}
+.character-hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.character-hero-actions .button,.character-lost .button{background:#d9e7ff;color:#122440;border-color:#c5d9ff;box-shadow:0 0 22px #83b7ff25}
+.character-hero-actions .button:hover,.character-lost .button:hover{background:#fff;color:#182b4f;border-color:white;box-shadow:0 0 30px #8dbdff66}
+.character-hero-actions .button.secondary{background:#0a1629b8;color:#dceaff;border-color:#6a87b0}
+.character-hero-actions .button.secondary:hover{background:#203751;border-color:#b5d2ff}
+.character-hero-bottom a{display:flex;align-items:center;gap:.7rem;min-height:44px;color:#d2e5ff}
+.character-hero-bottom a:hover{color:white}
+.character-lost{max-width:none;width:100%;min-height:max(690px,calc(100svh - 88px));position:relative;isolation:isolate;overflow:hidden;background:#070e1b;color:#edf2ff;display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:5rem max(var(--space),calc((100vw - 1390px)/2))}
+.character-lost:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#050b19e8 0%,#070e1ba8 28%,transparent 62%,#060d1980),linear-gradient(0deg,#060b19d9,transparent 45%);pointer-events:none}
+.character-lost-content{max-width:400px}
+.character-lost .eyebrow{color:#a7c5f2;font-size:.6875rem}
+.character-lost-number{font-family:Georgia,serif;font-weight:400;font-size:clamp(6rem,12vw,10rem);letter-spacing:.06em;line-height:1.15;display:block;margin:1.3rem 0 .4rem;color:#eaf2ff;text-shadow:0 0 40px #76a5ff50}
+.character-lost h1{font-family:'Noto Serif SC','Songti SC',Georgia,serif;font-weight:400;font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:.1em;line-height:1.5;margin:0 0 .6rem}
+.character-lost-content>p{color:#d5e4fb;font-size:1.15rem;line-height:1.8;margin-bottom:1rem}
+.character-lost-content>.character-lost-description{color:#aebfd8;font-size:.9375rem;max-width:320px}
+.character-lost-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.4rem;margin-top:2rem}
+.character-lost .text-link{color:#d0e4ff}
+.character-lost .text-link:hover{color:#fff}
+.character-lost-note{align-self:flex-end;max-width:245px;text-align:right;padding-bottom:.5rem}
+.character-lost-note .brand-art-signature{width:140px;margin:0 0 1rem auto;mix-blend-mode:screen}
+.character-lost-note p{white-space:pre-line;font-family:'Noto Serif SC','Songti SC',Georgia,serif;font-size:.875rem;line-height:2;color:#b7c9e5}
+.footer-easter-egg{display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid #3d5274;border-radius:50%;transition:background .2s,box-shadow .2s}
+.footer-easter-egg>.brand-art-symbol{width:26px}
+.footer-easter-egg:hover,.footer-easter-egg:focus-visible{background:#182d49;box-shadow:0 0 22px #719eff44}
+@media(max-width:800px){.character-hero{min-height:780px}.character-hero-content{padding:2rem .5rem 6.5rem}.character-hero-scene img{object-position:38% bottom}.character-hero:before{background:linear-gradient(180deg,#050b1577,transparent 30%,#050b1599 78%,#050b15),radial-gradient(ellipse at center,#050b1580,transparent)}.character-hero-bottom>span:last-child{display:none}.character-lost{min-height:810px;display:block;padding-top:3rem}.character-lost-scene img{object-position:62% bottom}.character-lost:before{background:linear-gradient(90deg,#050b19dd,transparent 100%),linear-gradient(0deg,#060b19ed,transparent 65%)}.character-lost-content{max-width:350px}.character-lost-note{margin:4rem 0 0 auto}}
+@media(max-width:480px){.character-hero{min-height:920px;padding-top:1.1rem}.character-hero-top{font-size:.5625rem;letter-spacing:.09em}.character-hero-content{padding:2rem 0 17rem}.character-hero-scene{inset:auto 0 0;height:420px;mask-image:linear-gradient(transparent,#000 22%)}.character-hero-scene img{object-position:25% bottom}.character-hero:before{background:linear-gradient(0deg,#060d19c9,transparent 20%)}.character-hero-prelude{font-size:.8125rem;letter-spacing:.06em}.character-hero-content .brand-art-calligraphy{width:230px}.character-hero-motto{font-size:1.1rem;letter-spacing:.05em}.character-hero-description{font-size:.875rem;max-width:310px}.character-hero-actions{gap:.7rem}.character-hero-actions .button{padding:.75rem 1rem;font-size:.8125rem}.character-hero-bottom{font-size:.625rem;letter-spacing:.05em}.character-lost{min-height:840px}.character-lost-number{font-size:6.5rem}.character-lost:before{background:linear-gradient(180deg,#050b19d9, #050b1977 50%,#050b19bb)}.character-lost-scene img{object-position:64% bottom}.character-lost-note{max-width:215px}}
+@media print{.character-hero,.character-lost{min-height:0;background:white;color:black}.character-hero-scene,.character-lost-scene,.character-hero:before,.character-lost:before{display:none}.character-hero p,.character-lost p{color:black;text-shadow:none}.character-hero-content{padding:2rem 0}.character-hero-content h1 .sr-only{position:static;clip:auto;width:auto;height:auto;white-space:normal}.character-hero-content h1>span[aria-hidden]{display:none}}

@@ -3,6 +3,7 @@ import type {Lang} from '@/lib/types';
 
 // Display windows on the approved boards. No redraw or alteration of the artwork.
 const crops={
+ calligraphy:{src:'identity-board',width:1312,height:1199,x:324,y:490,w:222,h:157},
  symbol:{src:'logo-board',width:1536,height:1024,x:804,y:80,w:144,h:150},
  seal:{src:'logo-board',width:1536,height:1024,x:55,y:66,w:394,h:365},
  primary:{src:'logo-board',width:1536,height:1024,x:522,y:95,w:246,h:138},
