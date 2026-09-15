@@ -64,7 +64,7 @@ export function BrandMotion({lang}:{lang:Lang}) {
   <div className={`brand-arrival${ready?' is-ready':''}`} aria-hidden="true">
    <div className="brand-arrival-center">
     <div className="brand-arrival-emblem"><i className="brand-orbit"/><BrandArt kind="symbol" priority/><i className="brand-arrival-flare"/></div>
-    <span className="brand-arrival-word">T1AR <small>昔泪</small></span>
+    <BrandArt kind="wordmark" className="brand-arrival-official-word" priority/>
     <div className="brand-loading-line"><span/></div>
     <span className="brand-arrival-caption">TRACE THE PAST · CREATE THE NEXT</span>
    </div>

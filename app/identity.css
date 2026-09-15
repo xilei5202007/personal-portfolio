@@ -1,4 +1,20 @@
 /* Approved T1ar identity: exact artwork windows, silver type and ice-blue accents. */
+.brand-lockup-approved .brand-art-horizontal{width:130px;mix-blend-mode:screen}
+.brand-page-mark{display:flex;align-items:center;gap:1.3rem;margin-bottom:2rem;width:100%;user-select:none}
+.brand-page-mark>.brand-art-wordmark{width:94px;filter:invert(1);mix-blend-mode:multiply;opacity:.85}
+.brand-page-mark>span:not(.brand-art){flex:1;height:1px;background:linear-gradient(90deg,#8199c3,#d6ddea00)}
+.brand-page-mark>small{font-size:.625rem;letter-spacing:.18em;color:#60708c;max-width:50%;text-align:right}
+.brand-footer-signature{display:flex;flex-direction:column;gap:.7rem}
+.brand-footer-signature>.brand-art-signature{width:150px;mix-blend-mode:screen}
+.brand-footer-signature>small{font-size:.625rem;letter-spacing:.2em;color:#a1b5d6}
+.identity-family.identity-extensions>div:first-child{grid-column:auto;min-height:160px}
+.identity-family.identity-extensions .brand-art-primary{width:190px}
+.identity-family.identity-extensions .brand-art-wordmark{width:150px}
+.identity-family.identity-extensions .brand-art-horizontal{width:180px}
+.identity-family.identity-extensions .brand-art-vertical{width:95px}
+.brand-arrival-official-word{width:155px;mix-blend-mode:screen}
+@media(max-width:700px){.brand-lockup-approved .brand-art-horizontal{width:104px}.brand-page-mark{gap:.8rem;margin-bottom:1.5rem}.brand-page-mark>.brand-art-wordmark{width:76px}.brand-page-mark>small{display:none}.identity-family.identity-extensions>div{padding:1rem;min-height:145px}.brand-footer-signature>.brand-art-signature{width:132px}}
+@media print{.brand-page-mark{display:none}}
 :root{--background:#f3f5fa;--foreground:#192237;--muted:#566277;--border:#d6ddea;--accent:#769dff;--accent-ink:#3156b0;--accent-soft:#e8eeff;--ink:#0a111d;--brand-silver:#e2e9fc;--brand-blue:#93b7ff}
 ::selection{color:#101a32;background:#b8cdff}
 .brand-art{display:block;position:relative;overflow:hidden;flex-shrink:0}
