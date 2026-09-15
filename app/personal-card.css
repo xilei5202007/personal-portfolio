@@ -1,0 +1,32 @@
+.personal-card-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,6rem);align-items:center;padding:3rem 0 4rem;border-bottom:1px solid var(--border)}
+.personal-card-copy h2{font-family:'Noto Serif SC','Songti SC',Georgia,serif;white-space:pre-line;font-weight:400;font-size:clamp(1.8rem,3vw,2.8rem);line-height:1.5;margin:1rem 0}
+.personal-card-copy p{font-size:1rem;color:var(--muted);line-height:1.8}
+.personal-card-toggle{margin-top:1.4rem;min-height:44px;padding:.7rem 1rem;border-color:#a7b6d0;color:#294575;background:transparent}
+.personal-card-toggle:hover{background:#e3ebfa;color:#162c52}
+.personal-card-stage{width:100%;max-width:540px;justify-self:end;perspective:1200px;padding:1rem 0}
+.personal-card-faces{display:grid;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.is-reversed .personal-card-faces{transform:rotateY(180deg)}
+.personal-card-face{grid-area:1/1;min-width:0;min-height:300px;aspect-ratio:1.7;padding:clamp(1.4rem,3vw,2.2rem);position:relative;overflow:hidden;border:1px solid #63789e;border-radius:12px;background:#0b1321;color:#e5edff;box-shadow:0 22px 40px -20px #1f365e80;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.personal-card-front{display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 85% 90%,#1d355a 0,transparent 60%),linear-gradient(130deg,#080f18,#101e34)}
+.personal-card-front>.brand-art-vertical{width:118px;mix-blend-mode:screen;z-index:1}
+.personal-card-edition{position:absolute;top:1.3rem;left:1.5rem;color:#9eb1cf;font-size:.625rem;letter-spacing:.2em}
+.personal-card-orbit{position:absolute;width:85%;height:32%;border:1px solid #749ddd55;border-right-color:#bfdaffbb;border-radius:50%;transform:rotate(-27deg);box-shadow:0 0 22px #77abff12}
+.personal-card-motto{position:absolute;bottom:1.4rem;left:1.5rem;font-size:.625rem;line-height:1.9;letter-spacing:.18em;color:#a5bddf}
+.personal-card-corner{position:absolute;bottom:1.5rem;right:1.5rem;font-size:.625rem;letter-spacing:.15em;color:#9bb5da}
+.personal-card-back{transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:space-between;gap:1.1rem;background:linear-gradient(125deg,#101c2e,#080f19)}
+.personal-card-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.personal-card-heading h3{font-family:'Noto Serif SC','Songti SC',Georgia,serif;font-size:1.55rem;font-weight:400;line-height:1.3;margin:0 0 .5rem}
+.personal-card-heading p{font-size:.875rem;margin:0;color:#b2c6e6;letter-spacing:.03em}
+.personal-card-heading .brand-art-symbol{width:40px}
+.personal-card-contact{display:flex;flex-direction:column;gap:.35rem;font-size:.875rem;line-height:1.6}
+.personal-card-contact>span{color:#9fafc9;margin-bottom:.2rem}
+.personal-card-contact a{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:32px;color:#e2edff;text-decoration:none;overflow-wrap:anywhere}
+.personal-card-contact a:hover{text-decoration:underline;color:#9dc5ff}
+.personal-card-contact a:focus-visible{outline:2px solid #a8ceff;outline-offset:3px}
+.personal-card-signoff{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #405270;padding-top:.6rem;gap:1rem}
+.personal-card-signoff>.brand-art-signature{width:92px;mix-blend-mode:screen}
+.personal-card-signoff>span{font-size:.625rem;letter-spacing:.12em;color:#9fafc9}
+@media(max-width:800px){.personal-card-section{grid-template-columns:1fr;gap:1.4rem;padding:2rem 0 3rem}.personal-card-stage{justify-self:start;max-width:520px}.personal-card-copy h2{white-space:normal;font-size:1.8rem}.personal-card-copy h2 br{display:none}}
+@media(max-width:420px){.personal-card-face{min-height:310px;aspect-ratio:auto;padding:1.3rem}.personal-card-heading h3{font-size:1.3rem}.personal-card-contact{font-size:.875rem}.personal-card-signoff>span{font-size:.5625rem;letter-spacing:.08em}.personal-card-corner{display:none}}
+@media(prefers-reduced-motion:reduce){.personal-card-faces{transition:none}}
+@media print{.personal-card-toggle,.personal-card-front{display:none}.personal-card-faces,.personal-card-back{transform:none!important}.personal-card-back{visibility:visible;backface-visibility:visible;background:#fff;color:#111;box-shadow:none}.personal-card-back p,.personal-card-back a,.personal-card-contact>span{color:#111}.personal-card-back .brand-art,.personal-card-signoff{display:none}.personal-card-section{display:block}.personal-card-stage{max-width:100%}}
