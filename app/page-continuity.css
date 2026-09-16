@@ -1,0 +1,73 @@
+/* One content grid at every viewport size; scene backgrounds can span the window. */
+@media screen {
+ :root {
+  --content-width: 1384px;
+  --page-gutter: max(var(--space), calc((100vw - var(--content-width)) / 2));
+  --section-space: clamp(3rem, 5vw, 5rem);
+ }
+ main:not(.character-lost) {max-width:none;width:100%;margin-inline:0;padding-inline:var(--page-gutter)}
+ .site-header,.site-footer {padding-inline:var(--page-gutter)}
+
+ /* Negative margins use the same gutter as the parent, including on ultra-wide screens. */
+ .home-page .character-hero {margin-inline:calc(-1 * var(--page-gutter));padding-inline:var(--page-gutter)}
+ .home-page .character-hero-scene img {object-position:center bottom}
+ .home-page .character-hero {min-height:max(700px,calc(100svh - 80px))}
+ .home-page .proof-strip {padding-block:clamp(1.5rem,3vw,2.4rem)}
+ .home-page>.section,.home-page>.home-about {padding-block:var(--section-space)}
+ .home-page .section-top {margin-bottom:clamp(1.5rem,3vw,2.5rem)}
+ .featured-viewer {margin-bottom:clamp(2rem,3vw,3rem)}
+ .home-page .analysis-cover {box-shadow:none}
+ .home-page .contact-band {box-shadow:none;margin-bottom:var(--section-space)}
+
+ /* Cover, outcomes and the character trace are one uninterrupted presentation. */
+ .project-presentation {background:#0c1422;border:1px solid #344660;color:#e6edf8;overflow:clip}
+ .project-presentation .project-main-visual {border:0;box-shadow:none;background:#0c1422}
+ .project-presentation .project-main-visual>img {display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:transparent}
+ .project-presentation .project-main-visual.project-poster {background:#080705;border:0}
+ .project-presentation .project-poster figcaption {background:#0c1422;border-bottom:1px solid #344660;padding:1rem clamp(1.25rem,3vw,2.5rem)}
+ .project-presentation .project-proof {margin:0;padding:clamp(1.4rem,2.5vw,2.25rem) clamp(1.25rem,3vw,2.5rem);background:transparent;border:0;gap:1.5rem}
+ .project-presentation .project-proof>div {min-width:0}
+ .project-presentation .project-proof span {color:#a9c5f0}
+ .project-presentation .project-proof strong {color:#e0e8f5;font-weight:500;line-height:1.8}
+ .project-presentation .chess-trace {margin:0;border:0;border-top:1px solid #344660;background:transparent;padding:clamp(1.5rem,3vw,2.5rem)}
+ .project-presentation .chess-trace-heading {margin-bottom:1.5rem}
+ .project-presentation .chess-trace-footer {margin-top:1.5rem}
+ .project-presentation .chess-trace-author {border-bottom-color:#344660}
+
+ /* Keep body and media on the same right-hand edge instead of ending at unrelated widths. */
+ .case-layout,.article-layout {gap:clamp(2rem,4vw,4rem);padding-block:var(--section-space)}
+ .case-content {max-width:none}
+ .case-section>p {max-width:76ch}
+ .project-gallery .article-figure,.case-section .article-figure {margin-top:1.75rem}
+ .article-figure .image-zoom {overflow:hidden}
+ .article-figure .image-zoom>img {display:block}
+ .about-intro {max-width:none}
+ .personal-card-section {gap:clamp(2rem,4vw,4rem);padding-block:var(--section-space)}
+ .personal-card-stage {max-width:600px}
+ .personal-card-face {box-shadow:0 16px 28px -24px #1f365e80}
+}
+
+@media screen and (min-width:1560px) {
+ /* Keep tall artwork at its authored proportion, rather than stretching it to the monitor. */
+ .home-page .character-hero {min-height:780px;min-height:min(960px,calc(100svh - 80px))}
+ .home-page .character-hero-content {padding-block:3rem 5rem}
+ .project-heading {padding-bottom:2.5rem}
+ .project-heading h1 {font-size:5rem}
+}
+@media screen and (max-width:850px) {
+ .project-presentation .project-proof {gap:1rem}
+ .project-presentation .chess-trace {padding-top:1.5rem}
+ .case-content {width:100%}
+}
+@media screen and (max-width:480px) {
+ .home-page .character-hero {min-height:920px}
+ .home-page .character-hero-scene img {object-position:25% bottom}
+ .home-page .character-hero-content {padding-bottom:17rem}
+ .project-presentation .project-proof {grid-template-columns:1fr;padding:1.25rem}
+ .project-presentation .chess-trace {padding:1.25rem}
+ .project-presentation .project-proof>div {display:flex}
+ .personal-card-stage {max-width:100%}
+}
+@media print {
+ .project-presentation {background:white;color:black;border:0}
+}
