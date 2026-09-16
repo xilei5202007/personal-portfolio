@@ -413,5 +413,26 @@
         "bytes": 125574
       }
     ]
+  },
+  "/images/luanshi-kt-cover.jpg": {
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/optimized/images/luanshi-kt-cover-480.webp",
+        "width": 480,
+        "bytes": 48570
+      },
+      {
+        "src": "/optimized/images/luanshi-kt-cover-960.webp",
+        "width": 960,
+        "bytes": 179930
+      },
+      {
+        "src": "/optimized/images/luanshi-kt-cover-1600.webp",
+        "width": 1600,
+        "bytes": 405752
+      }
+    ]
   }
 }

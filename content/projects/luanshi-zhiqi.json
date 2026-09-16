@@ -4,7 +4,7 @@
   "featured": 1,
   "status": "playable",
   "genre": "strategy-rpg",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-16",
   "name": {
     "zh": "乱世执棋",
     "en": "Luanshi Zhiqi"
@@ -29,10 +29,10 @@
     "zh": "3 人团队",
     "en": "3-person team"
   },
-  "cover": "/images/luanshi-game.png",
+  "cover": "/images/luanshi-kt-cover.jpg",
   "coverAlt": {
-    "zh": "《乱世执棋》大地图与城池信息界面，来自本人作品集",
-    "en": "Luanshi Zhiqi world map and city interface, from the author's portfolio"
+    "zh": "《乱世执棋》黑金 KT 展板封面：三国人物落子、作品介绍与试玩入口，作者提供",
+    "en": "Author-supplied black-and-gold Luanshi Zhiqi exhibition board with Three Kingdoms characters, a chess move, game introduction and demo access"
   },
   "tags": [
     "AI NPC",
@@ -93,6 +93,15 @@
         "zh": "让每条指令，都回到同一个战局。",
         "en": "Connect every order to the same world."
       },
+      "images": [
+        {
+          "src": "/images/luanshi-game.png",
+          "caption": {
+            "zh": "实机界面 · 大地图与城池信息，展示玩家进行决策时读取的信息。来源：本人作品集。",
+            "en": "Gameplay interface · The world map and city information used for player decisions. Source: author's portfolio."
+          }
+        }
+      ],
       "paragraphs": [
         {
           "zh": "围绕三国大地图，组织城池、内政、军事、调兵、谋略、外交、亲信、人物与任命。玩家在城池信息与人物关系之间判断优先级，再通过指令队列与回合结算观察结果。",

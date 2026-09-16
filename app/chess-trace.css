@@ -1,4 +1,12 @@
 /* A stone is T1ar's trace in this project; routes explain design, not game rules. */
+.work-luanshi-zhiqi .work-image {aspect-ratio:16/9;background:#080705}
+.work-luanshi-zhiqi .work-image>img {object-fit:contain}
+.work-luanshi-zhiqi .work-image:hover>img {transform:none}
+.project-main-visual.project-poster {background:#080705;border-color:#514226}
+.project-poster .article-figure {margin:0}
+.project-poster .image-zoom {display:block;width:100%;background:#080705}
+.project-poster .image-zoom>img {display:block;width:100%;height:auto;object-fit:contain}
+.project-poster figcaption {margin:0;padding:.75rem 1rem;color:#d8c49b;font-size:.875rem}
 .chess-trace-mark {position:absolute;inset:0;z-index:2;pointer-events:none;display:grid;place-items:center;overflow:hidden}
 .chess-mark-grid {position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,#0c172429,#07101ce6),repeating-linear-gradient(0deg,transparent 0 39px,#bdd5ff38 40px 41px),repeating-linear-gradient(90deg,transparent 0 39px,#bdd5ff38 40px 41px);transition:opacity .35s}
 .chess-mark-stone,.chess-arrival-stone {display:grid;place-items:center;width:66px;height:66px;border-radius:50%;background:radial-gradient(circle at 35% 22%,#fffdf5,#e7e3d8 68%,#a8a398 100%);border:1px solid #fff4d8;color:#29334a;font:32px 'Noto Serif SC','Songti SC',serif;box-shadow:0 7px 0 #8e929f,0 16px 26px #0008,inset 0 0 0 6px #beb8a459;position:relative}
