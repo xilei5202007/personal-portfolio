@@ -1,0 +1,48 @@
+/* Each animated property has one owner: GSAP inside motion components. */
+.motion-project{--project-light:#b8d2ff}
+.motion-project[data-trace=chess]{--project-light:#e3bd77}
+.motion-project[data-trace=photo]{--project-light:#fff0c7}
+.motion-project .project-frame{position:absolute;inset:10px;z-index:2;pointer-events:none;opacity:0;background:linear-gradient(var(--project-light),var(--project-light)) left top/26px 1px,linear-gradient(var(--project-light),var(--project-light)) left top/1px 26px,linear-gradient(var(--project-light),var(--project-light)) right bottom/26px 1px,linear-gradient(var(--project-light),var(--project-light)) right bottom/1px 26px;background-repeat:no-repeat}
+.motion-project.is-motion-managed :is(.project-frame,.project-entry-label,.chess-mark-grid,.chess-mark-stone,.chess-mark-caption),.motion-project.is-motion-managed :is(.project-entry,.showcase-arrow) svg{transition:none;animation:none}
+.motion-project.is-motion-managed::after,.motion-project.is-motion-managed .showcase-image::after{display:none}
+.home-page .motion-project.is-motion-managed .project-entry-label{max-width:none;margin-right:10px;opacity:.7}
+.motion-project.is-motion-managed .chess-mark-stone::after{opacity:.5;border-color:#e4c48680;box-shadow:0 0 24px #d7a94924}
+.motion-project.is-motion-managed .chess-mark-grid{background:linear-gradient(180deg,#130c0522,#130e06c9),repeating-linear-gradient(0deg,transparent 0 39px,#e4c4862b 40px 41px),repeating-linear-gradient(90deg,transparent 0 39px,#e4c4862b 40px 41px)}
+.project-trace-line{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#e8c788;stroke-width:1;pointer-events:none}
+.project-trace-route{stroke-dasharray:1;opacity:0;vector-effect:non-scaling-stroke}
+.photo-trace-mark{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.photo-trace-frame{position:absolute;inset:14px;border:1px solid #ffedbd99;border-bottom-width:3px;opacity:0;box-shadow:inset 0 0 32px #fff0c718}
+.photo-trace-light{position:absolute;inset:0;background:linear-gradient(110deg,transparent 25%,#fff4d747 50%,transparent 75%);opacity:0}
+.motion-project:is(:hover,:focus-visible) .photo-trace-frame{opacity:1}
+.motion-project:is(:hover,:focus-visible) .project-frame{opacity:1}
+.motion-project.work-image:hover>img,.motion-project.work-image>img{transform:none}
+.motion-project.is-motion-managed .chess-mark-stone{color:#523b1b;background:radial-gradient(circle at 35% 22%,#fff9e5,#e4cd9e 70%,#9e804e)}
+.motion-showcase .showcase-panel{position:relative;isolation:isolate}
+.motion-showcase .showcase-project{animation:none}
+.motion-showcase .showcase-previous{position:absolute;inset:0;pointer-events:none;opacity:0;visibility:hidden;overflow:hidden;z-index:0}
+.motion-showcase .showcase-current{position:relative;z-index:1}
+.motion-showcase .showcase-arrow{transform:none!important;transition:background .2s,color .2s}
+.motion-chess .chess-trace-node.is-selected .chess-trace-stone,.motion-chess .chess-trace-route,.motion-chess .chess-trace-panel:not([hidden]){animation:none}
+.motion-chess .chess-trace-stone{position:relative;transition:background .2s,color .2s}
+.motion-chess .chess-trace-route{stroke-dasharray:1;stroke:#e3c38a;filter:drop-shadow(0 0 3px #cdb37e66)}
+.chess-trace-halo{position:absolute;inset:-10px;pointer-events:none;border:1px solid #e3c38a;border-radius:50%;opacity:0}
+.motion-chess .is-selected .chess-trace-halo{opacity:.3}
+.motion-arrival :is(.chess-arrival-stone,.chess-arrival-ring){animation:none}
+.motion-arrival .chess-arrival-ring{opacity:.45}
+.motion-home .character-hero::after{content:'';position:absolute;left:0;right:0;bottom:0;height:100px;background:linear-gradient(transparent,#080f1b);pointer-events:none;z-index:-1}
+.motion-home .proof-strip{position:relative;margin-top:0;margin-inline:calc(-1 * var(--page-gutter));padding-inline:var(--page-gutter);background:linear-gradient(#080f1b,#15233a);border:0;color:#d5e2f5;isolation:isolate}
+.motion-home .proof-strip :is(.proof-index,p){color:#b4c6e2}
+.motion-home .proof-strip strong{color:#eff4ff}
+.motion-home .proof-strip>a{border-color:#839cc53d;position:relative;z-index:1}
+.motion-home .proof-strip>a:first-of-type{padding-left:0}
+.motion-home .proof-strip>a:hover{background:#c7deff0b}
+.motion-home .proof-strip>a:hover strong{color:#c9ddff}
+.home-motion-trace{position:absolute;pointer-events:none;width:100%;height:100%;inset:0;z-index:-1;overflow:visible}
+.home-motion-trace path{fill:none;stroke:#a7c8ff;stroke-width:1;vector-effect:non-scaling-stroke;stroke-dasharray:1;opacity:.35}
+.home-motion-trace circle{fill:#dbeaff;opacity:.8}
+.motion-home .selected-section{position:relative;isolation:isolate}
+.motion-home .selected-section::before{content:'';position:absolute;left:calc(-1 * var(--page-gutter));right:calc(-1 * var(--page-gutter));top:0;height:430px;background:linear-gradient(#15233a,#263a55 28%,#263a5533 72%,transparent);pointer-events:none;z-index:-1}
+.motion-home .selected-section>.section-top :is(h2,a){color:#eef4ff}
+.motion-home .selected-section>.section-top .eyebrow{color:#abc6ed}
+@media(prefers-reduced-motion:reduce){.home-motion-trace{display:none}}
+@media print{.home-motion-trace,.motion-home .selected-section::before,.showcase-previous{display:none}.motion-home .proof-strip{background:white;color:black}.motion-home .proof-strip :is(strong,p,.proof-index),.motion-home .selected-section>.section-top :is(h2,a,.eyebrow){color:black}.motion-home :is(.work-card,.featured-viewer,.section-top){opacity:1!important;transform:none!important}}

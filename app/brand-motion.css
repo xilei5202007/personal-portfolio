@@ -6,18 +6,17 @@
  input[type="checkbox"],input[type="radio"],input[type="range"] {cursor:url('/brand/cursor-link.svg') 3 2,pointer!important}
  :disabled,[aria-disabled="true"] {cursor:not-allowed!important}
 }
-.brand-arrival {position:fixed;inset:0;z-index:1000;pointer-events:none;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 65%,#142340 0%,#090f19 42%,#050a10 78%);color:#e4efff;animation:brand-arrival-failsafe .4s 3s forwards;transition:opacity .38s ease,visibility .38s}
-.brand-arrival.is-ready {opacity:0;visibility:hidden}
+.brand-arrival {position:fixed;inset:0;z-index:1000;pointer-events:none;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 65%,#142340f5 0%,#090f19f0 42%,#050a10ed 78%);color:#e4efff;opacity:0;visibility:hidden}
 .brand-arrival-center {width:min(300px,76vw);display:flex;align-items:center;flex-direction:column;text-align:center}
 .brand-arrival-emblem {position:relative;width:174px;height:180px;display:grid;place-items:center;margin-bottom:20px}
-.brand-arrival-emblem .brand-art {width:115px;z-index:1;mix-blend-mode:screen;filter:drop-shadow(0 0 15px #7ca7ff66);animation:brand-mark-arrive .7s ease-out both}
-.brand-orbit {position:absolute;width:220px;height:70px;border:1px solid #83afff70;border-top-color:#e0eeff;transform:rotate(-28deg);border-radius:50%;box-shadow:0 0 18px #608efc24;animation:brand-orbit-breathe 1.8s ease-in-out infinite}
+.brand-arrival-emblem .brand-art {width:115px;z-index:1;mix-blend-mode:screen;filter:drop-shadow(0 0 15px #7ca7ff66)}
+.brand-orbit {position:absolute;width:220px;height:70px;border:1px solid #83afff70;border-top-color:#e0eeff;transform:rotate(-28deg);border-radius:50%;box-shadow:0 0 18px #608efc24}
 .brand-orbit:after {content:'';position:absolute;left:27px;bottom:3px;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 12px 4px #7eabff}
-.brand-arrival-flare {position:absolute;top:72px;right:43px;width:38px;height:38px;z-index:2;background:#eef8ff;clip-path:polygon(50% 0,55% 43%,100% 50%,55% 55%,50% 100%,44% 56%,0 50%,44% 44%);animation:brand-flare 1.5s ease-in-out infinite}
+.brand-arrival-flare {position:absolute;top:72px;right:43px;width:38px;height:38px;z-index:2;background:#eef8ff;clip-path:polygon(50% 0,55% 43%,100% 50%,55% 55%,50% 100%,44% 56%,0 50%,44% 44%)}
 .brand-arrival-word {font-family:Georgia,'Times New Roman',serif;font-size:28px;letter-spacing:.4em;padding-left:.4em}
 .brand-arrival-word small {display:block;font-size:14px;letter-spacing:.4em;margin-top:10px}
 .brand-loading-line {width:120px;height:1px;background:#b3d0ff25;overflow:hidden;margin:28px 0 18px}
-.brand-loading-line span {display:block;width:45%;height:100%;background:#c9dfff;box-shadow:0 0 10px #84b4ff;animation:brand-line 1.2s ease-in-out infinite}
+.brand-loading-line span {display:block;width:100%;height:100%;background:#c9dfff;box-shadow:0 0 10px #84b4ff}
 .brand-arrival-caption {font-size:10px;letter-spacing:.22em;color:#a2b8d6}
 .brand-navigation-progress {position:fixed;z-index:1200;top:0;left:0;height:2px;width:100%;pointer-events:none;opacity:0;overflow:hidden}
 .brand-navigation-progress.is-active {opacity:1}
@@ -31,10 +30,6 @@
 .brand-click-star {position:absolute;width:30px;height:30px;margin:-15px;animation:brand-click .48s ease-out forwards}
 .brand-click-star:before {content:'';position:absolute;inset:0;background:#dbeaff;clip-path:polygon(50% 0,56% 40%,92% 18%,60% 46%,100% 50%,59% 55%,80% 85%,54% 60%,50% 100%,44% 60%,8% 82%,40% 54%,0 50%,40% 44%,20% 15%,46% 40%)}
 .brand-click-star:after {content:'';position:absolute;inset:2px;border:1px solid #6699ef;border-radius:50%;box-shadow:0 0 12px #629eff66}
-@keyframes brand-arrival-failsafe {to{opacity:0;visibility:hidden}}
-@keyframes brand-mark-arrive {from{opacity:0;transform:translateY(9px) scale(.93)}to{opacity:1;transform:none}}
-@keyframes brand-orbit-breathe {50%{transform:rotate(-20deg) scale(1.06);opacity:.5}}
-@keyframes brand-flare {50%{opacity:.45;transform:scale(.7)}}
 @keyframes brand-line {from{transform:translateX(-110%)}to{transform:translateX(390%)}}
 @keyframes brand-click {from{opacity:.95;transform:scale(.4) rotate(-15deg)}to{opacity:0;transform:scale(1.5) rotate(20deg)}}
 @media (prefers-reduced-motion:reduce) {

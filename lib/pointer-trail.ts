@@ -1,4 +1,4 @@
-type TrailPoint = {x:number;y:number;time:number;dragging:boolean};
+type TrailPoint = {x:number;y:number;time:number;dragging:boolean;reading:boolean};
 
 /** Decorative, viewport-local light trail. Never captures or cancels input. */
 export function mountPointerTrail(canvas:HTMLCanvasElement) {
@@ -31,7 +31,7 @@ export function mountPointerTrail(canvas:HTMLCanvasElement) {
   for (let index = 1; index < points.length; index++) {
    const previous = points[index-1], point = points[index];
    const fade = (1 - (now - previous.time)/lifetime) ** 2;
-   const strength = point.dragging ? 1 : .65;
+   const strength = (point.dragging ? 1 : .65) * (point.reading ? .4 : 1);
    context.beginPath(); context.moveTo(previous.x,previous.y); context.lineTo(point.x,point.y);
    context.strokeStyle = `rgba(88,145,255,${fade * strength * .24})`;
    context.lineWidth = point.dragging ? 7 : 4;
@@ -47,7 +47,7 @@ export function mountPointerTrail(canvas:HTMLCanvasElement) {
     const radius = (point.dragging ? 3 : 1.8) * fade;
     context.beginPath(); context.moveTo(point.x-radius,point.y); context.lineTo(point.x+radius,point.y);
     context.moveTo(point.x,point.y-radius); context.lineTo(point.x,point.y+radius);
-    context.strokeStyle = `rgba(207,232,255,${fade * .8})`; context.lineWidth = .8; context.stroke();
+    context.strokeStyle = `rgba(207,232,255,${fade * strength * .8})`; context.lineWidth = .8; context.stroke();
    }
   }
   if (points.length) frame = requestAnimationFrame(draw);
@@ -62,7 +62,8 @@ export function mountPointerTrail(canvas:HTMLCanvasElement) {
   if (last && (distance > 220 || now-last.time > lifetime)) points = [];
   else if (last && distance < 2) return;
   lastSample = now;
-  points.push({x:event.clientX,y:event.clientY,time:now,dragging:(event.buttons & 1) !== 0});
+  const reading=event.target instanceof Element&&Boolean(event.target.closest('p, dd, dt, .case-content, .article-content'));
+  points.push({x:event.clientX,y:event.clientY,time:now,dragging:(event.buttons & 1) !== 0,reading});
   if (points.length > 48) points.shift();
   if (!frame) frame = requestAnimationFrame(draw);
  };

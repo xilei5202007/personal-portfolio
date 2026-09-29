@@ -3,6 +3,7 @@
 import {useId,useRef,useState,type KeyboardEvent} from 'react';
 import {ArrowDownRight} from 'lucide-react';
 import {t,type Lang,type Section} from '@/lib/types';
+import {useMotion,motionConditions} from '@/lib/motion';
 
 const moves = [
  {id:'design',stone:'谋',label:{zh:'设计目标',en:'Design goal'},title:{zh:'让每次选择，都能读懂局势。',en:'Make the next decision legible.'},path:'M 16 78 H 26 V 34 H 48',x:26,y:34,steps:{zh:['观察城池与人物','安排指令优先级','回合结算与反馈'],en:['Read cities and relationships','Prioritize orders','Resolve the turn']}},
@@ -15,7 +16,22 @@ export function ChessTrace({lang,sections}:{lang:Lang;sections:Section[]}) {
  const uid=useId();
  const [active,setActive]=useState(0);
  const buttons=useRef<(HTMLButtonElement|null)[]>([]);
+ const root=useRef<HTMLElement>(null);
  const move=moves[active];
+ useMotion(({gsap})=>{
+  const mm=gsap.matchMedia();
+  mm.add(motionConditions,context=>{
+   if(context.conditions?.reduce)return;
+   const select=gsap.utils.selector(root);
+   gsap.timeline({defaults:{ease:'power2.out'}})
+    .fromTo(select('.is-selected .chess-trace-stone'),{y:-18,scale:1.06,opacity:.45},{y:0,scale:1,opacity:1,duration:.24},0)
+    .fromTo(select('.is-selected .chess-trace-halo'),{scale:.65,opacity:0},{scale:1.15,opacity:.8,duration:.22},.13)
+    .fromTo(select('.chess-trace-route'),{strokeDashoffset:1},{strokeDashoffset:0,duration:.34},.2)
+    .fromTo(select('.chess-trace-panel:not([hidden]) > *'),{y:6,opacity:.45},{y:0,opacity:1,duration:.22,stagger:.025,clearProps:'opacity,transform'},.36)
+    .to(select('.is-selected .chess-trace-halo'),{opacity:.3,scale:1,duration:.18},.4);
+  });
+  return()=>mm.revert();
+ },{scope:root,dependencies:[active]});
  function onKey(event:KeyboardEvent<HTMLButtonElement>,index:number) {
   let next=index;
   if(event.key==='ArrowRight'||event.key==='ArrowDown')next=(index+1)%moves.length;
@@ -25,7 +41,7 @@ export function ChessTrace({lang,sections}:{lang:Lang;sections:Section[]}) {
   else return;
   event.preventDefault();setActive(next);buttons.current[next]?.focus();
  }
- return <section className="chess-trace" id="chess-trace" aria-labelledby={`${uid}-heading`}>
+ return <section ref={root} className="chess-trace motion-chess" id="chess-trace" aria-labelledby={`${uid}-heading`}>
   <header className="chess-trace-heading">
    <div><span className="chess-trace-kicker">T1AR / TRACE 01</span><h2 id={`${uid}-heading`}>{zh?'落子之痕':'The trace of a move'}</h2><p>{zh?'我在这个世界留下一子，把设计的思考留在棋局里。':'I leave a stone in this world, and the thinking behind it on the board.'}</p></div>
    <span className="chess-trace-index" aria-hidden="true">01 — 03</span>
@@ -40,7 +56,7 @@ export function ChessTrace({lang,sections}:{lang:Lang;sections:Section[]}) {
       <circle cx="16" cy="78" r="1.1"/>
      </svg>
      {moves.map((item,i)=><button type="button" role="tab" id={`${uid}-tab-${i}`} aria-controls={`${uid}-panel-${i}`} aria-selected={active===i} tabIndex={active===i?0:-1} key={item.id} ref={el=>{buttons.current[i]=el}} onClick={()=>setActive(i)} onKeyDown={e=>onKey(e,i)} className={`chess-trace-node${active===i?' is-selected':''}`} style={{left:`${item.x}%`,top:`${item.y}%`}}>
-      <span className="chess-trace-stone" aria-hidden="true">{item.stone}</span><span className="chess-trace-node-label">{t(item.label,lang)}</span>
+      <span className="chess-trace-stone" aria-hidden="true"><i className="chess-trace-halo"/>{item.stone}</span><span className="chess-trace-node-label">{t(item.label,lang)}</span>
      </button>)}
      <span className="chess-trace-origin" aria-hidden="true">{zh?'起念':'ORIGIN'}</span>
     </div>

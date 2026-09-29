@@ -5,11 +5,12 @@ import {usePathname} from 'next/navigation';
 import {BrandArt} from './brand-identity';
 import type {Lang} from '@/lib/types';
 import {mountPointerTrail} from '@/lib/pointer-trail';
+import {useMotion,motionConditions} from '@/lib/motion';
 
 export function BrandMotion({lang}:{lang:Lang}) {
  const chessArrival=usePathname()?.endsWith('/projects/luanshi-zhiqi');
- const [ready, setReady] = useState(false);
  const [departing, setDeparting] = useState(false);
+ const arrival = useRef<HTMLDivElement>(null);
  const sparks = useRef<HTMLDivElement>(null);
  const trail = useRef<HTMLCanvasElement>(null);
 
@@ -17,16 +18,37 @@ export function BrandMotion({lang}:{lang:Lang}) {
   if (trail.current) return mountPointerTrail(trail.current);
  }, []);
 
+ useMotion(({gsap}) => {
+  // The server-rendered intro is hidden. A returning visit never flashes it.
+  let seen = false;
+  try {seen = sessionStorage.getItem('t1ar-intro-v1') === 'seen'; sessionStorage.setItem('t1ar-intro-v1','seen');} catch { /* Storage is optional. */ }
+  if (seen) return;
+  let played=false;
+  const mm = gsap.matchMedia();
+  mm.add(motionConditions, context => {
+   if (context.conditions?.reduce || played) return;
+   played=true;
+   const select=gsap.utils.selector(arrival);
+   const tl = gsap.timeline({defaults:{ease:'power2.out'}});
+   // A cancelled or failed intro must never visually cover the content indefinitely.
+   const fallback=window.setTimeout(()=>{tl.progress(1);},1500);
+   tl.eventCallback('onComplete',()=>clearTimeout(fallback));
+   tl.set(arrival.current,{autoAlpha:1})
+    .from('.brand-arrival-emblem .brand-art, .chess-arrival-stone',{opacity:0,y:10,scale:.88,duration:.3},0)
+    .from('.brand-arrival-word, .brand-arrival-caption',{opacity:0,y:5,stagger:.05,duration:.25},.12)
+    .fromTo('.brand-loading-line span',{scaleX:0},{scaleX:1,transformOrigin:'left',duration:.38},.05)
+    .to('.brand-arrival-center',{y:-14,scale:.98,duration:.28},.45)
+    .to(arrival.current,{autoAlpha:0,duration:.3},.45);
+   if(select('.brand-orbit').length)tl.from('.brand-orbit',{scaleX:.35,opacity:0,duration:.38},.02);
+   if(select('.brand-arrival-flare').length)tl.from('.brand-arrival-flare',{scale:0,opacity:0,duration:.25},.1);
+   return()=>clearTimeout(fallback);
+  });
+  return () => mm.revert();
+ },{scope:arrival});
+
  useEffect(() => {
-  // Visual introduction only: neither the overlay nor its timer blocks the page.
-  const start = performance.now();
-  let introTimer: ReturnType<typeof setTimeout>;
   let navigationTimer: ReturnType<typeof setTimeout>;
-  const finish = () => { introTimer = setTimeout(() => setReady(true), Math.max(0, 650 - (performance.now() - start))); };
-  if (document.readyState === 'complete') finish();
-  else window.addEventListener('load', finish, {once:true});
-  const fallback = setTimeout(() => setReady(true), 2500);
-  const restore = () => { setDeparting(false); setReady(true); };
+  const restore = () => { clearTimeout(navigationTimer); setDeparting(false); };
   const onNavigate = (event:MouseEvent) => {
    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
    const anchor = event.target instanceof Element ? event.target.closest('a[href]') : null;
@@ -54,8 +76,7 @@ export function BrandMotion({lang}:{lang:Lang}) {
   document.addEventListener('pointerdown', onPointer, {passive:true});
   window.addEventListener('pageshow', restore);
   return () => {
-   clearTimeout(introTimer); clearTimeout(navigationTimer); clearTimeout(fallback);
-   window.removeEventListener('load', finish);
+   clearTimeout(navigationTimer);
    window.removeEventListener('pageshow', restore);
    document.removeEventListener('click', onNavigate);
    document.removeEventListener('pointerdown', onPointer);
@@ -63,7 +84,7 @@ export function BrandMotion({lang}:{lang:Lang}) {
  }, []);
 
  return <>
-  <div className={`brand-arrival${ready?' is-ready':''}${chessArrival?' chess-arrival':''}`} aria-hidden="true">
+  <div ref={arrival} className={`brand-arrival motion-arrival${chessArrival?' chess-arrival':''}`} aria-hidden="true">
    <div className="brand-arrival-center">
     {chessArrival?<div className="chess-arrival-board"><span className="chess-arrival-ring"/><span className="chess-arrival-stone">执</span></div>:<div className="brand-arrival-emblem"><i className="brand-orbit"/><BrandArt kind="symbol" priority/><i className="brand-arrival-flare"/></div>}
     <span className="brand-arrival-word">{chessArrival?(lang==='zh'?'落子之痕':'A MOVE, A TRACE'):'T1AR'} <small>{chessArrival?(lang==='zh'?'昔泪 · 乱世执棋':'T1AR · LUANSHI ZHIQI'):'昔泪'}</small></span>
