@@ -1,0 +1,80 @@
+{
+  "slug": "valorant/haven-01",
+  "visibility": "public",
+  "game": {
+    "zh": "无畏契约",
+    "en": "VALORANT"
+  },
+  "title": {
+    "zh": "隐世修所拆解 01 奥丁穿墙的成立条件",
+    "en": "Haven 01: When Odin wallbangs make sense"
+  },
+  "fullTitle": {
+    "zh": "隐世修所拆解 01 奥丁穿墙的成立条件",
+    "en": "Haven 01: When Odin wallbangs make sense"
+  },
+  "summary": {
+    "zh": "从空间、表面、武器与行动代价拆解奥丁穿墙，呈现研究向本人解说视频转化的取舍。",
+    "en": "A study of space, surfaces, weapon resources and action costs, with a completed author-narrated episode."
+  },
+  "genre": "FPS / TPS",
+  "topics": [
+    {
+      "zh": "地图设计",
+      "en": "Map design"
+    },
+    {
+      "zh": "内容策划",
+      "en": "Content planning"
+    },
+    {
+      "zh": "信息设计",
+      "en": "Information design"
+    }
+  ],
+  "version": "作品集整理版 v1.0",
+  "updatedAt": "2026-10-02",
+  "readMinutes": 5,
+  "cover": "/analysis/valorant/haven-01/cover.webp",
+  "coverAlt": {
+    "zh": "隐世修所拆解 01 · 原作品配套封面",
+    "en": "Haven 01: When Odin wallbangs make sense · Original production cover"
+  },
+  "coverCaption": {
+    "zh": "原作品配套封面 · 沿用作者提供的策划视觉素材",
+    "en": "Original production cover supplied with the author’s plan"
+  },
+  "body": "haven-01.md",
+  "englishBody": "haven-01-en.md",
+  "assetBase": "/analysis/valorant/haven-01",
+  "imageCredits": {
+    "haven-01-questions.png": "原策划配套素材"
+  },
+  "downloadGroup": "valorant/haven-01",
+  "cases": {
+    "own": 0,
+    "creator": 0,
+    "esports": 0
+  },
+  "sampleLabel": {
+    "zh": "12 页策划 PPT · 1 期本人解说成片",
+    "en": "12-slide plan · 1 narrated video"
+  },
+  "contentStatus": {
+    "zh": "一期本人解说成片已完成",
+    "en": "Plan and narrated episode completed"
+  },
+  "languageStatus": {
+    "zh": "中文全文 / 英文摘要",
+    "en": "Chinese article / English abstract"
+  },
+  "sourcesFile": "haven-01.json",
+  "video": {
+    "src": "/analysis/valorant/haven-01/video.mp4",
+    "poster": "/analysis/valorant/haven-01/cover.webp",
+    "description": {
+      "zh": "第一期本人解说成片 · 约 103 秒。实战画面来自原研究所用选手 POV，配有本人解说、字幕与复盘问题卡。",
+      "en": "The 103-second author-narrated first episode. Player POV footage from the research is presented with narration, captions and review prompts."
+    }
+  }
+}

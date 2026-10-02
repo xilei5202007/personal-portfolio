@@ -1,0 +1,72 @@
+{
+  "slug": "valorant/haven-04",
+  "visibility": "public",
+  "game": {
+    "zh": "无畏契约",
+    "en": "VALORANT"
+  },
+  "title": {
+    "zh": "隐世修所拆解 04 猎枭的技能与大招决策",
+    "en": "Haven 04: Sova utility and ultimate decisions"
+  },
+  "fullTitle": {
+    "zh": "隐世修所拆解 04 猎枭的技能与大招决策",
+    "en": "Haven 04: Sova utility and ultimate decisions"
+  },
+  "summary": {
+    "zh": "围绕技能信息、候选箭点与三种大招情境，区分行动目的、可见收益和未知贡献。",
+    "en": "Utility, candidate lineups and three ultimate-information scenarios; intent, observable outcomes and unknowns stay separate."
+  },
+  "genre": "FPS / TPS",
+  "topics": [
+    {
+      "zh": "地图设计",
+      "en": "Map design"
+    },
+    {
+      "zh": "内容策划",
+      "en": "Content planning"
+    },
+    {
+      "zh": "信息设计",
+      "en": "Information design"
+    }
+  ],
+  "version": "作品集整理版 v1.0",
+  "updatedAt": "2026-10-02",
+  "readMinutes": 5,
+  "cover": "/analysis/valorant/haven-04/cover.webp",
+  "coverAlt": {
+    "zh": "隐世修所拆解 04 · 原作品配套封面",
+    "en": "Haven 04: Sova utility and ultimate decisions · Original production cover"
+  },
+  "coverCaption": {
+    "zh": "原作品配套封面 · 沿用作者提供的策划视觉素材",
+    "en": "Original production cover supplied with the author’s plan"
+  },
+  "body": "haven-04.md",
+  "englishBody": "haven-04-en.md",
+  "assetBase": "/analysis/valorant/haven-04",
+  "imageCredits": {
+    "haven-04-minimap.png": "原策划配套素材"
+  },
+  "downloadGroup": "valorant/haven-04",
+  "cases": {
+    "own": 0,
+    "creator": 0,
+    "esports": 0
+  },
+  "sampleLabel": {
+    "zh": "12 页策划 PPT · 制作资料包",
+    "en": "12-slide plan · Utility and decision study"
+  },
+  "contentStatus": {
+    "zh": "制作资料包，成片待制作",
+    "en": "Production materials ready · Video pending"
+  },
+  "languageStatus": {
+    "zh": "中文全文 / 英文摘要",
+    "en": "Chinese article / English abstract"
+  },
+  "sourcesFile": "haven-04.json"
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "domain-expansion",
+  "visibility": "public",
+  "featured": 3,
+  "status": "released",
+  "genre": "aigc-video",
+  "updatedAt": "2026-10-02",
+  "name": {
+    "zh": "领域展开",
+    "en": "Domain Expansion"
+  },
+  "subtitle": {
+    "zh": "ComfyUI × MiniMax H3 · AI 影像实验",
+    "en": "ComfyUI × MiniMax H3 · AI video experiment"
+  },
+  "summary": {
+    "zh": "一段约 30 秒的动画风格视觉短片，以角色对峙、能量爆发与领域变化呈现视觉概念。",
+    "en": "A 30-second animation-style short exploring character confrontations, energy effects and changing domains."
+  },
+  "role": {
+    "zh": "AI 视频制作 · 视觉概念呈现",
+    "en": "AI video creation · Visual concept presentation"
+  },
+  "period": {
+    "zh": "2026.10 · 已完成短片",
+    "en": "Oct 2026 · Completed short"
+  },
+  "team": {
+    "zh": "本人制作；使用生成式 AI 工具",
+    "en": "Created by the author using generative AI tools"
+  },
+  "cover": "/projects/domain-expansion/poster.jpg",
+  "coverAlt": {
+    "zh": "视频中的三角色分屏与蓝、紫、绿能量效果",
+    "en": "Three-character split screen with blue, purple and green energy effects"
+  },
+  "video": {
+    "src": "/projects/domain-expansion/video.mp4",
+    "poster": "/projects/domain-expansion/poster.jpg",
+    "description": {
+      "zh": "《领域展开》AI 视觉短片，约 30 秒；含音轨，播放后可使用控制栏调整音量或全屏。",
+      "en": "Domain Expansion, a 30-second AI visual short with audio. Use the controls for volume and full-screen playback."
+    }
+  },
+  "tags": [
+    "AIGC",
+    "ComfyUI",
+    "MiniMax H3"
+  ],
+  "results": [
+    {
+      "zh": "30 秒视觉短片",
+      "en": "30-second visual short"
+    },
+    {
+      "zh": "1080p · 30 fps",
+      "en": "1080p · 30 fps"
+    },
+    {
+      "zh": "ComfyUI + MiniMax H3 制作实践",
+      "en": "ComfyUI + MiniMax H3 creation practice"
+    }
+  ],
+  "cardHighlight": {
+    "zh": "AI 视频创作 · 可直接播放完整短片",
+    "en": "AI video creation · Watch the complete short"
+  },
+  "links": [],
+  "sections": [
+    {
+      "id": "concept",
+      "title": {
+        "zh": "把视觉概念做成可以观看的短片。",
+        "en": "Turning a visual concept into a short."
+      },
+      "paragraphs": [
+        {
+          "zh": "作品以动画风格的角色特写、屋顶对峙和领域变化组织视觉片段，通过能量效果、漂浮物与画面切换展示角色冲突。",
+          "en": "The short combines animation-style close-ups, a rooftop confrontation and changing domains, using energy effects, floating objects and scene transitions to present conflict."
+        },
+        {
+          "zh": "我使用 ComfyUI 与 MiniMax H3 制作这段视频，将它作为 AI 影像创作与视觉概念呈现的实践作品。",
+          "en": "I created this video with ComfyUI and MiniMax H3 as a practice in AI filmmaking and visual concept presentation."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": {
+        "zh": "实际交付与作品定位",
+        "en": "Deliverable and scope"
+      },
+      "paragraphs": [
+        {
+          "zh": "本页展示完整短片，约 30.6 秒，1080p、30 fps，保留音轨。网页播放版本经过压缩，便于访问和播放。",
+          "en": "This page presents the complete 30.6-second short at 1080p and 30 fps, with its audio track. The web version is compressed for convenient playback."
+        },
+        {
+          "zh": "画面由生成式 AI 工具制作，作品侧重概念镜头与视觉效果的表达，作为游戏策划之外的影像创作实践。",
+          "en": "The visuals were created with generative AI tools. This experiment focuses on concept shots and visual effects as a filmmaking practice alongside game design."
+        }
+      ]
+    }
+  ],
+  "gallery": [],
+  "next": {
+    "zh": "后续可补充制作过程与迭代对照。",
+    "en": "A future update may document the process and compare iterations."
+  },
+  "devlog": []
+}
