@@ -1,0 +1,71 @@
+{
+  "note": {
+    "zh": "网页呈现本人研究与策划成果；观察、分析与待确认内容在正文中分别说明。",
+    "en": "This page documents the author’s research and planning. Observations, interpretations and unconfirmed elements are distinguished in the text."
+  },
+  "disclaimer": {
+    "zh": "下载的原稿保留形成时的版本与表述。作品集整理版补充了研究边界，当前机制或具体点位仍应在同版本验证。",
+    "en": "Original files retain their source-era wording and version context. The portfolio edition clarifies scope; specific mechanics and lineups need validation in the matching version."
+  },
+  "sources": [
+    {
+      "id": "AUTHOR",
+      "title": {
+        "zh": "本人原策划与制作交付文档",
+        "en": "Author’s original plan and production materials"
+      },
+      "scope": {
+        "zh": "原资料形成于 2026-09-27；网页整理于 2026-10-02。包含策划文稿、专题 PPT 与配套制作资料。",
+        "en": "Source materials dated 2026-09-27; portfolio edition prepared Oct 2, 2026."
+      }
+    },
+    {
+      "id": "SOURCE-1",
+      "url": "https://playvalorant.com/en-gb/maps/",
+      "title": {
+        "zh": "Riot 官方地图资料",
+        "en": "Riot map reference"
+      },
+      "scope": {
+        "zh": "用于对照地图整体结构与历史设计意图；具体技巧以研究版本为限。",
+        "en": "Context for map structure and historical design intent."
+      }
+    },
+    {
+      "id": "SOURCE-2",
+      "url": "https://www.bilibili.com/video/BV1E1L16PEtW",
+      "title": {
+        "zh": "原资料所引视频",
+        "en": "Video cited in original materials"
+      },
+      "scope": {
+        "zh": "保留原策划的检索来源，不表示本次已逐项复核全部结论、回合、数据或跨版本点位。",
+        "en": "Original research reference; not a claim that every statistic, round or lineup has been independently revalidated."
+      }
+    },
+    {
+      "id": "SOURCE-3",
+      "url": "https://wiki.biligame.com/valorant/隐世修所",
+      "title": {
+        "zh": "原资料所引社区条目",
+        "en": "Reference cited in original materials"
+      },
+      "scope": {
+        "zh": "保留原策划的检索来源，不表示本次已逐项复核全部结论、回合、数据或跨版本点位。",
+        "en": "Original research reference; not a claim that every statistic, round or lineup has been independently revalidated."
+      }
+    },
+    {
+      "id": "SOURCE-4",
+      "url": "https://wiki.biligame.com/valorant/奥丁",
+      "title": {
+        "zh": "原资料所引社区条目",
+        "en": "Reference cited in original materials"
+      },
+      "scope": {
+        "zh": "保留原策划的检索来源，不表示本次已逐项复核全部结论、回合、数据或跨版本点位。",
+        "en": "Original research reference; not a claim that every statistic, round or lineup has been independently revalidated."
+      }
+    }
+  ]
+}

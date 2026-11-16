@@ -1,0 +1,72 @@
+{
+  "slug": "valorant/split",
+  "visibility": "public",
+  "game": {
+    "zh": "无畏契约",
+    "en": "VALORANT"
+  },
+  "title": {
+    "zh": "霓虹町地图设计拆解",
+    "en": "Split: Map design and control"
+  },
+  "fullTitle": {
+    "zh": "霓虹町地图设计拆解",
+    "en": "Split: Map design and control"
+  },
+  "summary": {
+    "zh": "从设计意图、路网控制、微观枪线到角色兑现与战术层级，组织地图研究、四份专题PPT和17期内容选题。",
+    "en": "Design intent, route control, sightlines, utility and team coordination, developed into four decks and a 17-topic content plan."
+  },
+  "genre": "FPS / TPS",
+  "topics": [
+    {
+      "zh": "地图设计",
+      "en": "Map design"
+    },
+    {
+      "zh": "内容策划",
+      "en": "Content planning"
+    },
+    {
+      "zh": "信息设计",
+      "en": "Information design"
+    }
+  ],
+  "version": "作品集整理版 v1.0",
+  "updatedAt": "2026-10-02",
+  "readMinutes": 6,
+  "cover": "/analysis/valorant/split/cover.webp",
+  "coverAlt": {
+    "zh": "霓虹町地图拆解 · 原作品配套封面",
+    "en": "Split: Map design and control · Original production cover"
+  },
+  "coverCaption": {
+    "zh": "原作品配套封面 · 沿用作者提供的策划视觉素材",
+    "en": "Original production cover supplied with the author’s plan"
+  },
+  "body": "split.md",
+  "englishBody": "split-en.md",
+  "assetBase": "/analysis/valorant/split",
+  "imageCredits": {
+    "split-control-map.png": "原策划配套素材"
+  },
+  "downloadGroup": "valorant/split",
+  "cases": {
+    "own": 0,
+    "creator": 0,
+    "esports": 0
+  },
+  "sampleLabel": {
+    "zh": "4 份专题 PPT · 45 页 · 17 期选题",
+    "en": "4 decks · 45 slides · 17 planned topics"
+  },
+  "contentStatus": {
+    "zh": "地图研究与内容策划",
+    "en": "Map research and content planning"
+  },
+  "languageStatus": {
+    "zh": "中文全文 / 英文摘要",
+    "en": "Chinese article / English abstract"
+  },
+  "sourcesFile": "split.json"
+}

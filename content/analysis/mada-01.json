@@ -1,0 +1,72 @@
+{
+  "slug": "valorant/mada-01",
+  "visibility": "public",
+  "game": {
+    "zh": "无畏契约",
+    "en": "VALORANT"
+  },
+  "title": {
+    "zh": "To Be The Bravest Duelist 01 mada 的进场选择",
+    "en": "To Be The Bravest Duelist 01: mada’s entry choices"
+  },
+  "fullTitle": {
+    "zh": "To Be The Bravest Duelist 01 mada 的进场选择",
+    "en": "To Be The Bravest Duelist 01: mada’s entry choices"
+  },
+  "summary": {
+    "zh": "通过两个代表案例与一个失败对照，研究突破时机、空间收益和队伍衔接，形成职业选手分析与制作设计。",
+    "en": "Two representative cases and one failure comparison examine entry timing, space and team follow-up."
+  },
+  "genre": "FPS / TPS",
+  "topics": [
+    {
+      "zh": "选手案例",
+      "en": "Player case studies"
+    },
+    {
+      "zh": "内容策划",
+      "en": "Content planning"
+    },
+    {
+      "zh": "信息设计",
+      "en": "Information design"
+    }
+  ],
+  "version": "作品集整理版 v1.0",
+  "updatedAt": "2026-10-02",
+  "readMinutes": 6,
+  "cover": "/analysis/valorant/mada-01/cover.webp",
+  "coverAlt": {
+    "zh": "mada 进场选择 · 原作品配套封面",
+    "en": "To Be The Bravest Duelist 01: mada’s entry choices · Original production cover"
+  },
+  "coverCaption": {
+    "zh": "原作品配套封面 · 沿用作者提供的策划视觉素材",
+    "en": "Original production cover supplied with the author’s plan"
+  },
+  "body": "mada-01.md",
+  "englishBody": "mada-01-en.md",
+  "assetBase": "/analysis/valorant/mada-01",
+  "imageCredits": {
+    "mada-01-frame-index.jpg": "原策划配套素材"
+  },
+  "downloadGroup": "valorant/mada-01",
+  "cases": {
+    "own": 0,
+    "creator": 0,
+    "esports": 3
+  },
+  "sampleLabel": {
+    "zh": "3 张案例卡 · 10 页 PPT",
+    "en": "3 case cards · 10-slide plan"
+  },
+  "contentStatus": {
+    "zh": "研究与制作资料，成片待制作",
+    "en": "Research and production materials · Video pending"
+  },
+  "languageStatus": {
+    "zh": "中文全文 / 英文摘要",
+    "en": "Chinese article / English abstract"
+  },
+  "sourcesFile": "mada-01.json"
+}

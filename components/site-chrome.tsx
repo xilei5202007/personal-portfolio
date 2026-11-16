@@ -7,7 +7,7 @@ import {Sheet,SheetTrigger,SheetContent,SheetHeader,SheetTitle,SheetDescription}
 import {Switch} from '@/components/ui/switch';
 import {Button} from '@/components/ui/button';
 import type {Lang} from '@/lib/types';
-const nav=[['','首页','Home'],['projects','游戏作品','Projects'],['game-analysis','游戏拆解','Game Analysis'],['about','关于我','About'],['resume','简历','Resume']];
+const nav=[['','首页','Home'],['projects','作品','Projects'],['game-analysis','游戏拆解','Game Analysis'],['about','关于我','About'],['resume','简历','Resume']];
 export function SiteHeader({lang}:{lang:Lang}){
  const path=usePathname(); const [open,setOpen]=useState(false); const [sound,setSound]=useState(false); const other=lang==='zh'?'en':'zh';
  useEffect(()=>{try{setSound(localStorage.getItem('t1ar-sound')==='on')}catch{}},[]);

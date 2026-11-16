@@ -4,7 +4,7 @@ const projectFiles=import.meta.glob('../content/projects/*.json',{eager:true,imp
 const analysisFiles=import.meta.glob('../content/analysis/*.json',{eager:true,import:'default'}) as Record<string,Analysis>;
 const articleFiles=import.meta.glob('../content/articles/*.md',{eager:true,query:'?raw',import:'default'}) as Record<string,string>;
 export const projects=Object.values(projectFiles).filter(p=>p.visibility==='public').sort((a,b)=>(a.featured??99)-(b.featured??99)||a.slug.localeCompare(b.slug));
-export const analyses=Object.values(analysisFiles).filter(p=>p.visibility==='public');
+export const analyses=Object.values(analysisFiles).filter(p=>p.visibility==='public').sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt)||a.slug.localeCompare(b.slug));
 export const article=(name:string)=>articleFiles[`../content/articles/${name}`]??'';
 export const origin='https://t1ar-portfolio.mossy-bay-3544.chatgpt.site';
 

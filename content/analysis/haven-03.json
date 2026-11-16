@@ -1,0 +1,72 @@
+{
+  "slug": "valorant/haven-03",
+  "visibility": "public",
+  "game": {
+    "zh": "无畏契约",
+    "en": "VALORANT"
+  },
+  "title": {
+    "zh": "隐世修所拆解 03 猎枭与奥丁的协同链",
+    "en": "Haven 03: Sova and Odin as an action chain"
+  },
+  "fullTitle": {
+    "zh": "隐世修所拆解 03 猎枭与奥丁的协同链",
+    "en": "Haven 03: Sova and Odin as an action chain"
+  },
+  "summary": {
+    "zh": "拆解猎枭与奥丁的单人链、协同链和反制，保留切换时序与旧点位的验证边界。",
+    "en": "Separating solo and team action chains, with timing constraints, counterplay and point-validation limits."
+  },
+  "genre": "FPS / TPS",
+  "topics": [
+    {
+      "zh": "地图设计",
+      "en": "Map design"
+    },
+    {
+      "zh": "内容策划",
+      "en": "Content planning"
+    },
+    {
+      "zh": "信息设计",
+      "en": "Information design"
+    }
+  ],
+  "version": "作品集整理版 v1.0",
+  "updatedAt": "2026-10-02",
+  "readMinutes": 5,
+  "cover": "/analysis/valorant/haven-03/cover.webp",
+  "coverAlt": {
+    "zh": "隐世修所拆解 03 · 原作品配套封面",
+    "en": "Haven 03: Sova and Odin as an action chain · Original production cover"
+  },
+  "coverCaption": {
+    "zh": "原作品配套封面 · 沿用作者提供的策划视觉素材",
+    "en": "Original production cover supplied with the author’s plan"
+  },
+  "body": "haven-03.md",
+  "englishBody": "haven-03-en.md",
+  "assetBase": "/analysis/valorant/haven-03",
+  "imageCredits": {
+    "haven-03-minimap.png": "原策划配套素材"
+  },
+  "downloadGroup": "valorant/haven-03",
+  "cases": {
+    "own": 0,
+    "creator": 0,
+    "esports": 0
+  },
+  "sampleLabel": {
+    "zh": "12 页策划 PPT · 制作资料包",
+    "en": "12-slide plan · Solo and team action chains"
+  },
+  "contentStatus": {
+    "zh": "制作资料包，成片待制作",
+    "en": "Production materials ready · Video pending"
+  },
+  "languageStatus": {
+    "zh": "中文全文 / 英文摘要",
+    "en": "Chinese article / English abstract"
+  },
+  "sourcesFile": "haven-03.json"
+}

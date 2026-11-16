@@ -45,6 +45,8 @@ export default defineConfig(async () => {
   const { cloudflare } = await import('@cloudflare/vite-plugin');
 
   return {
+    // Preserve generated files when local deletion guards block a clean rebuild.
+    build: process.env.PORTFOLIO_KEEP_BUILD_OUTPUT === '1' ? { emptyOutDir: false } : undefined,
     css: { postcss: { plugins: [tailwindcss()] } },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }

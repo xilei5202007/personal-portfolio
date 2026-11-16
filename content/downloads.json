@@ -6,10 +6,10 @@
       "zh": "中文简历",
       "en": "Chinese resume"
     },
-    "url": "/pdf/resume-zh-2026-09-08.pdf",
-    "size": "0.19 MB",
-    "version": "2026.09 · GGJ",
-    "updatedAt": "2026-09-08"
+    "url": "/pdf/resume-zh-2026-10-02.pdf",
+    "size": "0.29 MB",
+    "version": "2026.10 · 作品与研究更新",
+    "updatedAt": "2026-10-02"
   },
   {
     "id": "valorant-v12",
@@ -70,5 +70,207 @@
     "size": "0.31 MB",
     "version": "v0.1",
     "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "haven-01-portfolio-pdf",
+    "group": "valorant/haven-01",
+    "title": {
+      "zh": "隐世修所拆解 01 · 作品集整理版 PDF",
+      "en": "隐世修所拆解 01 · Portfolio edition PDF"
+    },
+    "url": "/pdf/haven-01-portfolio.pdf",
+    "size": "2.16 MB",
+    "version": "v1.0 · 图文全文整理版",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "haven-01-original-1",
+    "group": "valorant/haven-01",
+    "title": {
+      "zh": "隐世修所拆解 01 · 原策划 PPT",
+      "en": "Haven 01: When Odin wallbangs make sense · Original planning deck"
+    },
+    "url": "/documents/haven-01/plan.pptx",
+    "size": "3.38 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-27",
+    "format": "PPTX"
+  },
+  {
+    "id": "haven-02-portfolio-pdf",
+    "group": "valorant/haven-02",
+    "title": {
+      "zh": "隐世修所拆解 02 · 作品集整理版 PDF",
+      "en": "隐世修所拆解 02 · Portfolio edition PDF"
+    },
+    "url": "/pdf/haven-02-portfolio.pdf",
+    "size": "5.00 MB",
+    "version": "v1.0 · 图文全文整理版",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "haven-02-original-1",
+    "group": "valorant/haven-02",
+    "title": {
+      "zh": "隐世修所拆解 02 · 原策划 PPT",
+      "en": "Haven 02: Information before firing · Original planning deck"
+    },
+    "url": "/documents/haven-02/plan.pptx",
+    "size": "5.86 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-30",
+    "format": "PPTX"
+  },
+  {
+    "id": "haven-03-portfolio-pdf",
+    "group": "valorant/haven-03",
+    "title": {
+      "zh": "隐世修所拆解 03 · 作品集整理版 PDF",
+      "en": "隐世修所拆解 03 · Portfolio edition PDF"
+    },
+    "url": "/pdf/haven-03-portfolio.pdf",
+    "size": "4.94 MB",
+    "version": "v1.0 · 图文全文整理版",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "haven-03-original-1",
+    "group": "valorant/haven-03",
+    "title": {
+      "zh": "隐世修所拆解 03 · 原策划 PPT",
+      "en": "Haven 03: Sova and Odin as an action chain · Original planning deck"
+    },
+    "url": "/documents/haven-03/plan.pptx",
+    "size": "5.29 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-30",
+    "format": "PPTX"
+  },
+  {
+    "id": "haven-04-portfolio-pdf",
+    "group": "valorant/haven-04",
+    "title": {
+      "zh": "隐世修所拆解 04 · 作品集整理版 PDF",
+      "en": "隐世修所拆解 04 · Portfolio edition PDF"
+    },
+    "url": "/pdf/haven-04-portfolio.pdf",
+    "size": "5.09 MB",
+    "version": "v1.0 · 图文全文整理版",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "haven-04-original-1",
+    "group": "valorant/haven-04",
+    "title": {
+      "zh": "隐世修所拆解 04 · 原策划 PPT",
+      "en": "Haven 04: Sova utility and ultimate decisions · Original planning deck"
+    },
+    "url": "/documents/haven-04/plan.pptx",
+    "size": "12.14 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-30",
+    "format": "PPTX"
+  },
+  {
+    "id": "mada-01-portfolio-pdf",
+    "group": "valorant/mada-01",
+    "title": {
+      "zh": "mada 进场选择 · 作品集整理版 PDF",
+      "en": "mada 进场选择 · Portfolio edition PDF"
+    },
+    "url": "/pdf/mada-01-portfolio.pdf",
+    "size": "1.53 MB",
+    "version": "v1.0 · 图文全文整理版",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "mada-01-original-1",
+    "group": "valorant/mada-01",
+    "title": {
+      "zh": "mada 进场选择 · 原策划 PPT",
+      "en": "To Be The Bravest Duelist 01: mada’s entry choices · Original planning deck"
+    },
+    "url": "/documents/mada-01/plan.pptx",
+    "size": "0.74 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-10-01",
+    "format": "PPTX"
+  },
+  {
+    "id": "split-portfolio-pdf",
+    "group": "valorant/split",
+    "title": {
+      "zh": "霓虹町地图拆解 · 作品集整理版 PDF",
+      "en": "霓虹町地图拆解 · Portfolio edition PDF"
+    },
+    "url": "/pdf/split-portfolio.pdf",
+    "size": "2.14 MB",
+    "version": "v1.0 · 图文全文整理版",
+    "updatedAt": "2026-10-02"
+  },
+  {
+    "id": "split-original-1",
+    "group": "valorant/split",
+    "title": {
+      "zh": "霓虹町地图拆解 · 原策划 PPT",
+      "en": "Split: Map design and control · Original planning deck"
+    },
+    "url": "/documents/split/plan.pptx",
+    "size": "2.35 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-12",
+    "format": "PPTX"
+  },
+  {
+    "id": "split-original-2",
+    "group": "valorant/split",
+    "title": {
+      "zh": "霓虹町地图拆解 · 霓虹町 · 三种死亡方式",
+      "en": "Split: Map design and control · Original thematic deck 2"
+    },
+    "url": "/documents/split/study-2.pptx",
+    "size": "2.34 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-12",
+    "format": "PPTX"
+  },
+  {
+    "id": "split-original-3",
+    "group": "valorant/split",
+    "title": {
+      "zh": "霓虹町地图拆解 · 霓虹町 · 角色兑现学",
+      "en": "Split: Map design and control · Original thematic deck 3"
+    },
+    "url": "/documents/split/study-3.pptx",
+    "size": "5.24 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-12",
+    "format": "PPTX"
+  },
+  {
+    "id": "split-original-4",
+    "group": "valorant/split",
+    "title": {
+      "zh": "霓虹町地图拆解 · 霓虹町 · 三层赢法",
+      "en": "Split: Map design and control · Original thematic deck 4"
+    },
+    "url": "/documents/split/study-4.pptx",
+    "size": "2.29 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-12",
+    "format": "PPTX"
+  },
+  {
+    "id": "split-original-5",
+    "group": "valorant/split",
+    "title": {
+      "zh": "霓虹町地图拆解 · 原地图拆解文档",
+      "en": "Split: Map design and control · Original map study"
+    },
+    "url": "/documents/split/original-study.docx",
+    "size": "0.04 MB",
+    "version": "原研究资料",
+    "updatedAt": "2026-09-12",
+    "format": "DOCX"
   }
 ]
