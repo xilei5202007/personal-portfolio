@@ -1,6 +1,7 @@
 'use client';
 
-import {useState} from 'react';
+import {useRef,useState} from 'react';
+import {useMotion,motionConditions} from '@/lib/motion';
 import {ArrowUpRight,RotateCw} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {BrandArt} from './brand-identity';
@@ -10,7 +11,24 @@ import type {Lang} from '@/lib/types';
 export function PersonalCard({lang}:{lang:Lang}) {
  const [back,setBack]=useState(false);
  const zh=lang==='zh';
- return <section className="personal-card-section" aria-labelledby="personal-card-title">
+ const root=useRef<HTMLElement>(null);
+ useMotion(({gsap})=>{
+  const mm=gsap.matchMedia();
+  mm.add(motionConditions,context=>{
+   if(context.conditions?.reduce)return;
+   gsap.fromTo(root.current?.querySelectorAll('.personal-card-satellite-path')??[],{strokeDashoffset:1},{strokeDashoffset:0,duration:.9,ease:'power2.inOut',scrollTrigger:{trigger:root.current,start:'top 85%',once:true}});
+  });
+  return()=>mm.revert();
+ },{scope:root});
+ useMotion(({gsap})=>{
+  const mm=gsap.matchMedia();
+  mm.add(motionConditions,context=>{
+   if(context.conditions?.reduce)return;
+   gsap.fromTo(root.current?.querySelectorAll('.personal-card-satellite-light')??[],{opacity:.1,scale:.65},{opacity:.85,scale:1,duration:.45,ease:'power2.out'});
+  });
+  return()=>mm.revert();
+ },{scope:root,dependencies:[back]});
+ return <section ref={root} className="personal-card-section" aria-labelledby="personal-card-title">
   <div className="personal-card-copy">
    <span className="eyebrow">A SMALL INTRODUCTION</span>
    <h2 id="personal-card-title">{zh?'一张名片，\n认识昔泪。':'A card.\nAn introduction.'}</h2>
@@ -18,6 +36,7 @@ export function PersonalCard({lang}:{lang:Lang}) {
    <Button variant="outline" className="personal-card-toggle" onClick={()=>setBack(!back)} aria-pressed={back} aria-controls="personal-card-faces"><RotateCw size={16}/>{zh?(back?'查看正面':'翻到背面'):(back?'Show front':'Show reverse')}</Button>
   </div>
   <div className={`personal-card-stage${back?' is-reversed':''}`}>
+   <svg className="personal-card-satellite" viewBox="0 0 600 360" preserveAspectRatio="none" aria-hidden="true"><path className="personal-card-satellite-base" d="M 12 255 C 50 330 570 80 588 115 S 470 250 430 270"/><path className="personal-card-satellite-path" pathLength="1" d="M 12 255 C 50 330 570 80 588 115 S 470 250 430 270"/><circle className="personal-card-satellite-light" cx="588" cy="115" r="3"/></svg>
    <div id="personal-card-faces" className="personal-card-faces">
     <div className="personal-card-face personal-card-front" aria-hidden={back} inert={back}>
      <span className="personal-card-edition">PERSONAL IDENTITY / 2026</span>
