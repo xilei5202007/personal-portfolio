@@ -47,6 +47,8 @@ export default defineConfig(async () => {
   return {
     // Preserve generated files when local deletion guards block a clean rebuild.
     build: process.env.PORTFOLIO_KEEP_BUILD_OUTPUT === '1' ? { emptyOutDir: false } : undefined,
+    // Geometry workers load only the selected scene's module.
+    worker: { format: 'es' as const },
     css: { postcss: { plugins: [tailwindcss()] } },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
